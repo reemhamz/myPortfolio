@@ -1,5 +1,39 @@
-@import './setup';
+@import "./setup";
+@import "./fonts";
 
-body{
-    background: wheat;
+$whiteColor: #ffff;
+
+.wrapper {
+    max-width: 1260px;
+    width: 80%;
+    margin: 0 auto;
 }
+
+body {
+    position: relative;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+// Arrow animation
+
+header {
+    background-image: url(/assets/deerSunRise.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// #particles-js{
+//     position: absolute;
+//     height: 100vh;
+//     // z-index: 10;
+// }

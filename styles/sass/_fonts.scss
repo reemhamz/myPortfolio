@@ -1,0 +1,33 @@
+h1, h2{
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+    line-height: 0.3;
+    // display: inline-block;
+}
+
+h1{
+    font-size: 8rem;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    span{
+        color: #ff7315;
+        position: relative;
+        z-index: 20;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        &::before{
+            content:"";
+			width: 90%;
+			height: 50%;
+            background: white;
+            border-radius: 20px;
+			opacity: 0.4;
+			position: absolute;
+			bottom: 0;
+            left: 5%;
+            // z-index: 0;
+        }
+    }
+}
+
+h2{
+    font-size: 5.8rem;
+}

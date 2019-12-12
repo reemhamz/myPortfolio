@@ -179,6 +179,70 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+h1, h2 {
+  font-family: 'Berkshire Swash', cursive;
+  color: white;
+  line-height: 0.3;
+}
+
+h1 {
+  font-size: 8rem;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h1 span {
+  color: #ff7315;
+  position: relative;
+  z-index: 20;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+h1 span::before {
+  content: "";
+  width: 90%;
+  height: 50%;
+  background: white;
+  border-radius: 20px;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+h2 {
+  font-size: 5.8rem;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 body {
-  background: wheat;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-image: url(/assets/deerSunRise.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
