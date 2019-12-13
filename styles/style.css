@@ -220,9 +220,39 @@ h1 span::before {
   left: 5%;
 }
 
+@media (max-width: 565px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 422px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+}
+
 h2 {
   font-size: 5.8rem;
   text-shadow: 1px 1px 5px black, 1px 1px 5px #ccc;
+}
+
+@media (max-width: 565px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 422px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 h3, h4, p {
@@ -253,7 +283,7 @@ p {
   font-weight: lighter;
 }
 
-button {
+button, .skillsUsed li {
   font-size: 2.2rem;
   font-weight: lighter;
   -webkit-transition: 0.5s;
@@ -262,15 +292,32 @@ button {
   color: #ffff;
   border-radius: 5px;
   border: none;
+  padding: 10px 30px;
 }
 
-button:hover {
+button:hover, .skillsUsed li:hover {
   background-color: #f91e46;
   border-radius: 10px;
 }
 
 ul {
   list-style: none;
+}
+
+.skillsUsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.skillsUsed li {
+  background-color: #642C4B;
+  padding: 10px 15px;
+  display: inline-block;
 }
 
 .aboutMe {
@@ -287,7 +334,7 @@ ul {
 }
 
 .aboutMe .aboutMeLeft {
-  width: 50%;
+  width: 45%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -307,22 +354,73 @@ ul {
 }
 
 .aboutMe .aboutMeRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 45%;
+  background-image: url(/assets/meAntlers.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  min-height: 50vh;
+  border-radius: 2px 20px;
+  position: relative;
+  cursor: pointer;
 }
 
-.aboutMe .aboutMeRight img {
-  max-width: 100%;
-  border-radius: 2px 20px;
-  display: block;
+.aboutMe .aboutMeRight p {
+  position: absolute;
+  top: 2%;
+  right: 30%;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.aboutMe .aboutMeRight:hover {
+  background-image: url(/assets/meHover.png);
+}
+
+@media (max-width: 930px) {
+  .aboutMe .aboutMeRight {
+    width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 930px) {
+  .aboutMe .aboutMeLeft {
+    width: 100%;
+  }
+  .aboutMe .aboutMeLeft h3, .aboutMe .aboutMeLeft h4 {
+    display: block;
+    text-align: center;
+  }
+  .aboutMe .aboutMeLeft .button {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .aboutMe .aboutMeLeft .button button {
+    width: 70%;
+  }
 }
 
 .aboutMe.wrapper {
   margin: 80px auto;
   padding: 20px;
   border-radius: 30px;
+}
+
+@media (max-width: 930px) {
+  .aboutMe.wrapper {
+    width: 90%;
+  }
 }
 
 .skills {
@@ -385,10 +483,69 @@ ul {
   text-align: center;
 }
 
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px 0;
+  margin-bottom: 80px;
+}
+
+.projects h4 {
+  color: #FA506F;
+}
+
+.projectButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.projectButtons button {
+  margin: 0 20px;
+}
+
+.firstProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.firstProject .firstRight {
+  width: 40%;
+}
+
+.firstProject .firstRight img {
+  width: 100%;
+}
+
+.firstProject .firstLeft {
+  width: 50%;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 80%;
   margin: 0 auto;
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 422px) {
+  .wrapper {
+    width: 95%;
+  }
 }
 
 body {

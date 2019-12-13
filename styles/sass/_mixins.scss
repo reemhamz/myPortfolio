@@ -1,0 +1,35 @@
+@mixin mqBigTablet{
+    @media(max-width: 1140px){
+        @content;
+    }
+}
+
+@mixin mqTablet{
+    @media(max-width: 930px){
+        @content;
+    }
+}
+
+@mixin mqBigPhone{
+    @media(max-width: 670px){
+        @content;
+    }
+}
+
+@mixin mqMedPhone{
+    @media(max-width: 565px){
+        @content;
+    }
+}
+
+@mixin mqSmallPhone{
+    @media(max-width: 422px){
+        @content;
+    }
+}
+
+@mixin mqTinyPhone{
+    @media (max-width: 340px){
+        @content;
+    }
+}

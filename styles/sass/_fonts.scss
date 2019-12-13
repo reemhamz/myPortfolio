@@ -36,11 +36,26 @@ h1{
             left: 5%;
         }
     }
+        @include mqMedPhone{
+        font-size: 6rem;
+    }
+        @include mqSmallPhone{
+            font-size: 5rem;
+        }
+        @include mqTinyPhone{
+            font-size: 4.6rem;
+        }
 }
 
 h2{
     font-size: 5.8rem;
     text-shadow:1px 1px 5px black, 1px 1px 5px #ccc;
+        @include mqMedPhone{
+        font-size: 4rem;
+    }
+        @include mqSmallPhone{
+        font-size: 3rem;
+    }
 }
 
 h3,h4,p{
@@ -71,7 +86,7 @@ p{
     font-weight: lighter;
 }
 
-button{
+button, .skillsUsed li{
     font-size: 2.2rem;
     font-weight: lighter;
     transition: 0.5s;
@@ -79,6 +94,7 @@ button{
     color: $whiteColor;
     border-radius: 5px;
     border: none;
+    padding: 10px 30px;
     &:hover{
         background-color: darken($color: $pinkColor, $amount: 10%);
         border-radius: 10px;
@@ -87,4 +103,15 @@ button{
 
 ul{
     list-style: none;
+}
+
+.skillsUsed{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    li{
+        background-color: $purpleColor;
+        padding: 10px 15px;
+        display: inline-block;
+    }
 }

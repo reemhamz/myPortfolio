@@ -1,13 +1,21 @@
 @import "./setup";
+@import "./mixins";
 @import "./colors";
 @import "./fonts";
 @import "./aboutMe";
 @import "./skills";
+@import "./projects";
 
 .wrapper {
     max-width: 1260px;
     width: 80%;
     margin: 0 auto;
+    @include mqBigPhone{
+        width: 90%;
+    }
+    @include mqSmallPhone{
+        width: 95%;
+    }
 }
 
 body {
@@ -32,8 +40,8 @@ header {
     position: relative;
     width: 100%;
     .headerContent{
-    position: relative;
-    z-index: 10;
+        position: relative;
+        z-index: 10;
 }
 }
 
