@@ -33,6 +33,7 @@ header {
     width: 100%;
     .headerContent{
     position: relative;
+    z-index: 10;
 }
 }
 
@@ -48,13 +49,14 @@ header {
     left: 50%;
     transform: translate(-50%,-50%);
     align-self: flex-end;
+    z-index: 10;
 }
 .arrow span{
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-bottom: 5px solid $whiteColor;
-    border-right: 5px solid $whiteColor;
+    border-right: 5px solid $whiteColor; 
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;

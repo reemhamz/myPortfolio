@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -202,7 +203,7 @@ h1 {
 }
 
 h1 span {
-  color: #FC6F5C;
+  color: #FA506F;
   position: relative;
   z-index: 20;
   text-shadow: 1px 1px 5px black, 1px 1px 5px black;
@@ -231,23 +232,25 @@ h3, h4, p {
 h3 {
   font-size: 4.8rem;
   text-transform: uppercase;
-  font-weight: 600;
-  border-bottom: 2px dashed #FC6F5C;
+  font-weight: 500;
+  border-bottom: 2px dashed #FA506F;
   display: inline-block;
 }
 
 h3 span {
-  color: #FC6F5C;
+  color: #FA506F;
 }
 
 h4 {
   margin-top: 20px;
   font-size: 3.2rem;
+  font-weight: lighter;
 }
 
 p {
   font-size: 2rem;
   color: #5f6769;
+  font-weight: lighter;
 }
 
 button {
@@ -255,13 +258,14 @@ button {
   font-weight: lighter;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background-color: #FC6F5C;
+  background-color: #FA506F;
   color: #ffff;
+  border-radius: 5px;
   border: none;
 }
 
 button:hover {
-  background-color: #fb432a;
+  background-color: #f91e46;
   border-radius: 10px;
 }
 
@@ -280,11 +284,10 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 2px solid #FC6F5C;
 }
 
 .aboutMe .aboutMeLeft {
-  width: 42%;
+  width: 50%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -295,7 +298,7 @@ ul {
 }
 
 .aboutMe .aboutMeLeft p span {
-  color: #FC6F5C;
+  color: #FA506F;
 }
 
 .aboutMe .aboutMeLeft button {
@@ -307,14 +310,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 52%;
+  width: 45%;
 }
 
 .aboutMe .aboutMeRight img {
   max-width: 100%;
-  -webkit-box-shadow: 10px 10px 5px 0px #FC6F5C;
-  box-shadow: 10px 10px 5px 0px #FC6F5C;
   border-radius: 2px 20px;
+  display: block;
 }
 
 .aboutMe.wrapper {
@@ -324,14 +326,38 @@ ul {
 }
 
 .skills {
-  background-color: #eaeaea;
+  background-color: #f8f8f8;
+  text-align: center;
 }
 
 .skills .wrapper {
   margin: 80px auto;
+  padding: 40px 0;
 }
 
-.skills .wrapper .skillsIcons {
+.skills .wrapper h4 {
+  position: relative;
+  display: inline-block;
+  padding: 0 50px;
+}
+
+.skills .wrapper h4::before {
+  position: absolute;
+  content: "—";
+  top: 0;
+  left: 0;
+  color: #FA506F;
+}
+
+.skills .wrapper h4::after {
+  position: absolute;
+  content: "—";
+  top: 0;
+  right: 0;
+  color: #FA506F;
+}
+
+.skills .skillsIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,11 +366,23 @@ ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-top: 20px;
 }
 
-.skills .wrapper .skillsIcons li {
+.skills .skillsIcons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 10px;
   padding: 20px;
+  color: #FA506F;
+  text-align: center;
 }
 
 .wrapper {
@@ -385,6 +423,7 @@ header {
 
 header .headerContent {
   position: relative;
+  z-index: 10;
 }
 
 .particles-js-canvas-el {
@@ -400,12 +439,13 @@ header .headerContent {
           transform: translate(-50%, -50%);
   -ms-flex-item-align: end;
       align-self: flex-end;
+  z-index: 10;
 }
 
 .arrow span {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-bottom: 5px solid #ffff;
   border-right: 5px solid #ffff;
   -webkit-transform: rotate(45deg);
