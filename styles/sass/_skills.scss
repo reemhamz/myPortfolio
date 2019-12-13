@@ -1,0 +1,14 @@
+.skills{
+    background-color: #eaeaea;
+    .wrapper{
+        margin: 80px auto;
+        .skillsIcons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            column-count: 6;
+            
+        }
+    }
+}
+
