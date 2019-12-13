@@ -265,6 +265,10 @@ button:hover {
   border-radius: 10px;
 }
 
+ul {
+  list-style: none;
+}
+
 .aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,11 +337,14 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-count: 6;
-          column-count: 6;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skills .wrapper .skillsIcons li {
+  margin: 10px;
+  padding: 20px;
 }
 
 .wrapper {

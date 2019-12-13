@@ -5,9 +5,12 @@
         .skillsIcons{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            column-count: 6;
-            
+            justify-content: space-evenly;
+            // column-count: 6;
+            li{
+                margin: 10px;
+                padding: 20px;
+            }
         }
     }
 }
