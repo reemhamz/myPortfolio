@@ -8,7 +8,7 @@
 
 .wrapper {
     max-width: 1260px;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     @include mqMedTablet{
         width: 90%;
@@ -16,6 +16,11 @@
     @include mqSmallPhone{
         width: 95%;
     }
+}
+
+img{
+    max-width: 100%;
+    display: block;
 }
 
 body {

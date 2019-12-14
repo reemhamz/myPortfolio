@@ -203,10 +203,9 @@ h1 {
 }
 
 h1 span {
-  color: #642C4B;
+  color: #c06c84;
   position: relative;
   z-index: 20;
-  text-shadow: 1px 1px 5px white, 1px 1px 5px white;
 }
 
 h1 span::before {
@@ -240,7 +239,7 @@ h1 span::before {
 
 h2 {
   font-size: 5.8rem;
-  text-shadow: 1px 1px 5px black, 1px 1px 5px #ccc;
+  text-shadow: 1px 1px 10px black, 1px 1px 10px #ccc;
 }
 
 @media (max-width: 565px) {
@@ -279,8 +278,8 @@ h4 {
 
 h5 {
   font-size: 3rem;
-  font-weight: lighter;
-  color: #642C4B;
+  font-weight: normal;
+  color: #c06c84;
 }
 
 p {
@@ -323,14 +322,14 @@ ul {
 
 .skillsUsed li {
   cursor: default;
-  background-color: #642C4B;
+  background-color: #c06c84;
   padding: 8px;
   margin: 5px;
   display: inline-block;
 }
 
 .skillsUsed li:hover {
-  background-color: #ab4b80;
+  background-color: #cf90a2;
 }
 
 a {
@@ -395,7 +394,7 @@ a {
   min-height: 50vh;
   border-radius: 2px 20px;
   position: relative;
-  cursor: pointer;
+  cursor: default;
 }
 
 .aboutMe .aboutMeRight p {
@@ -538,6 +537,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projectButtons {
@@ -547,7 +550,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .projectButtons button {
@@ -564,6 +567,9 @@ a {
 }
 
 .firstProject .firstLeft {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 40%;
 }
 
@@ -592,9 +598,211 @@ a {
   }
 }
 
+.firstProject .skillsUsed, .firstProject .projectButtons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.secondProject {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.secondProject .secondRight {
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.secondProject .secondRight img {
+  width: 100%;
+}
+
+.secondProject .secondLeft {
+  width: 50%;
+  text-align: right;
+}
+
+@media (max-width: 1175px) {
+  .secondProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondProject .secondRight {
+    width: 100%;
+  }
+  .secondProject .secondLeft {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.secondProject .skillsUsed, .secondProject .projectButtons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.thirdProject {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.thirdProject .thirdLeft {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 40%;
+}
+
+.thirdProject .thirdLeft img {
+  width: 100%;
+}
+
+.thirdProject .thirdRight {
+  width: 50%;
+  text-align: left;
+}
+
+@media (max-width: 1175px) {
+  .thirdProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .thirdProject .thirdLeft {
+    width: 100%;
+  }
+  .thirdProject .thirdRight {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.thirdProject .skillsUsed, .thirdProject .projectButtons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.fourthProject {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fourthProject p a {
+  color: #FA506F;
+}
+
+.fourthProject .fourthRight {
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.fourthProject .fourthRight img {
+  width: 100%;
+}
+
+.fourthProject .fourthLeft {
+  width: 50%;
+  text-align: right;
+}
+
+@media (max-width: 1175px) {
+  .fourthProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fourthProject .fourthRight {
+    width: 100%;
+  }
+  .fourthProject .fourthLeft {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.fourthProject .skillsUsed, .fourthProject .projectButtons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.fifthProject {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fifthProject .fifthLeft {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 40%;
+}
+
+.fifthProject .fifthLeft img {
+  width: 100%;
+}
+
+.fifthProject .fifthRight {
+  width: 50%;
+  text-align: left;
+}
+
+@media (max-width: 1175px) {
+  .fifthProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fifthProject .fifthLeft {
+    width: 100%;
+  }
+  .fifthProject .fifthRight {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.fifthProject .skillsUsed, .fifthProject .projectButtons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .wrapper {
   max-width: 1260px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -608,6 +816,11 @@ a {
   .wrapper {
     width: 95%;
   }
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 body {

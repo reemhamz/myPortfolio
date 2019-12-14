@@ -23,17 +23,19 @@
                 right: 0;
                 color: $pinkColor;
             }
+        
     }
     .wrapper{
         display: flex;
         margin-top: 40px;
+        flex-direction: column;
     }
 }
 
 .projectButtons{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px;
     button{
         margin: 0 5px;
     }
@@ -43,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     .firstLeft{
+        align-self: center;
         width: 40%;
         img{
             width: 100%;
@@ -62,5 +65,132 @@
             text-align: center;
         }
     }
+    .skillsUsed, .projectButtons{
+        justify-content: flex-start;
+    }
 }
 
+.secondProject{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    .secondRight{
+        width: 40%;
+        align-self: center;
+        img{
+            width: 100%;
+        }
+    }
+    .secondLeft{
+        width: 50%;
+        text-align: right;
+    }
+    @include mqMedTablet{
+        flex-direction: column;
+        .secondRight{
+            width: 100%;
+        }
+        .secondLeft{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .skillsUsed, .projectButtons{
+        justify-content: flex-end;
+    }
+}
+
+.thirdProject{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    .thirdLeft{
+        align-self: center;
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+    .thirdRight{
+        width: 50%;
+        text-align: left;
+    }
+    @include mqMedTablet{
+        flex-direction: column;
+        .thirdLeft{
+            width: 100%;
+        }
+        .thirdRight{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .skillsUsed, .projectButtons{
+        justify-content: flex-start;
+    }
+}
+
+.fourthProject{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+        p{
+            a{
+                color: $pinkColor;
+            }
+        }
+    .fourthRight{
+        width: 40%;
+        align-self: center;
+        img{
+            width: 100%;
+        }
+    }
+    .fourthLeft{
+        width: 50%;
+        text-align: right;
+    }
+    @include mqMedTablet{
+        flex-direction: column;
+        .fourthRight{
+            width: 100%;
+        }
+        .fourthLeft{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .skillsUsed, .projectButtons{
+        justify-content: flex-end;
+    }
+}
+
+.fifthProject{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    .fifthLeft{
+        align-self: center;
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+    .fifthRight{
+        width: 50%;
+        text-align: left;
+    }
+    @include mqMedTablet{
+        flex-direction: column;
+        .fifthLeft{
+            width: 100%;
+        }
+        .fifthRight{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .skillsUsed, .projectButtons{
+        justify-content: flex-start;
+    }
+}
