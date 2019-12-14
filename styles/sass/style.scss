@@ -10,7 +10,7 @@
     max-width: 1260px;
     width: 80%;
     margin: 0 auto;
-    @include mqBigPhone{
+    @include mqMedTablet{
         width: 90%;
     }
     @include mqSmallPhone{

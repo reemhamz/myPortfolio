@@ -203,10 +203,10 @@ h1 {
 }
 
 h1 span {
-  color: #FA506F;
+  color: #642C4B;
   position: relative;
   z-index: 20;
-  text-shadow: 1px 1px 5px black, 1px 1px 5px black;
+  text-shadow: 1px 1px 5px white, 1px 1px 5px white;
 }
 
 h1 span::before {
@@ -255,7 +255,7 @@ h2 {
   }
 }
 
-h3, h4, p {
+h3, h4, h5, li, p, a {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -277,9 +277,15 @@ h4 {
   font-weight: lighter;
 }
 
+h5 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: #642C4B;
+}
+
 p {
   font-size: 2rem;
-  color: #5f6769;
+  color: #696464;
   font-weight: lighter;
 }
 
@@ -290,7 +296,6 @@ button, .skillsUsed li {
   transition: 0.5s;
   background-color: #FA506F;
   color: #ffff;
-  border-radius: 5px;
   border: none;
   padding: 10px 30px;
 }
@@ -308,19 +313,39 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 20px;
 }
 
 .skillsUsed li {
+  cursor: default;
   background-color: #642C4B;
-  padding: 10px 15px;
+  padding: 8px;
+  margin: 5px;
   display: inline-block;
 }
 
+.skillsUsed li:hover {
+  background-color: #ab4b80;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .aboutMe {
+  background-image: url(/assets/whiteBackground.png);
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 80px 0;
+}
+
+.aboutMe .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +356,15 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .aboutMe .aboutMeLeft {
@@ -349,7 +383,6 @@ ul {
 }
 
 .aboutMe .aboutMeLeft button {
-  padding: 20px 40px;
   margin-top: 20px;
 }
 
@@ -386,15 +419,6 @@ ul {
 }
 
 @media (max-width: 930px) {
-  .aboutMe {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 930px) {
   .aboutMe .aboutMeLeft {
     width: 100%;
   }
@@ -412,7 +436,6 @@ ul {
 }
 
 .aboutMe.wrapper {
-  margin: 80px auto;
   padding: 20px;
   border-radius: 30px;
 }
@@ -426,11 +449,7 @@ ul {
 .skills {
   background-color: #f8f8f8;
   text-align: center;
-}
-
-.skills .wrapper {
-  margin: 80px auto;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 .skills .wrapper h4 {
@@ -484,15 +503,41 @@ ul {
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 80px 0;
-  margin-bottom: 80px;
+  background-image: url(/assets/whiteBackground.png);
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 80px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .projects h4 {
+  position: relative;
+  display: inline-block;
+  padding: 0 50px;
+}
+
+.projects h4::before {
+  position: absolute;
+  content: "—";
+  top: 0;
+  left: 0;
   color: #FA506F;
+}
+
+.projects h4::after {
+  position: absolute;
+  content: "—";
+  top: 0;
+  right: 0;
+  color: #FA506F;
+}
+
+.projects .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
 }
 
 .projectButtons {
@@ -506,7 +551,7 @@ ul {
 }
 
 .projectButtons button {
-  margin: 0 20px;
+  margin: 0 5px;
 }
 
 .firstProject {
@@ -518,16 +563,33 @@ ul {
           justify-content: space-between;
 }
 
-.firstProject .firstRight {
+.firstProject .firstLeft {
   width: 40%;
 }
 
-.firstProject .firstRight img {
+.firstProject .firstLeft img {
   width: 100%;
 }
 
-.firstProject .firstLeft {
+.firstProject .firstRight {
   width: 50%;
+  text-align: left;
+}
+
+@media (max-width: 1175px) {
+  .firstProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .firstProject .firstLeft {
+    width: 100%;
+  }
+  .firstProject .firstRight {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .wrapper {
@@ -536,7 +598,7 @@ ul {
   margin: 0 auto;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 1175px) {
   .wrapper {
     width: 90%;
   }

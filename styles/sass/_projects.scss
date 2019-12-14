@@ -1,9 +1,32 @@
 .projects{
-    display: flex;
-    margin: 80px 0;
-    margin-bottom: 80px;
-    h4{
-        color: $pinkColor;
+    background-image: url(/assets/whiteBackground.png);
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 80px 0;
+    margin: 0 auto;
+    text-align: center;
+        h4{
+            position: relative;
+            display: inline-block;
+            padding: 0 50px;
+            &::before{
+                position: absolute;
+                content: "—";
+                top: 0;
+                left: 0;
+                color: $pinkColor;
+            }
+            &::after{
+                position: absolute;
+                content: "—";
+                top: 0;
+                right: 0;
+                color: $pinkColor;
+            }
+    }
+    .wrapper{
+        display: flex;
+        margin-top: 40px;
     }
 }
 
@@ -12,21 +35,32 @@
     justify-content: center;
     margin-top: 20px;
     button{
-        margin: 0 20px;
+        margin: 0 5px;
     }
 }
 
 .firstProject{
     display: flex;
     justify-content: space-between;
-    .firstRight{
+    .firstLeft{
         width: 40%;
         img{
             width: 100%;
         }
     }
-    .firstLeft{
+    .firstRight{
         width: 50%;
+        text-align: left;
+    }
+    @include mqMedTablet{
+        flex-direction: column;
+        .firstLeft{
+            width: 100%;
+        }
+        .firstRight{
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 

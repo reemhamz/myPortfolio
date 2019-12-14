@@ -20,11 +20,11 @@ h1{
     font-size: 8rem;
     text-shadow:1px 1px 5px black, 1px 1px 5px black;    
     span{
-        color:$pinkColor;
+        color:$purpleColor;
         position: relative;
         z-index: 20;
         
-        text-shadow:1px 1px 5px black, 1px 1px 5px black;
+        text-shadow:1px 1px 5px white, 1px 1px 5px white;
         &::before{
             content:"";
 			width: 90%;
@@ -58,7 +58,7 @@ h2{
     }
 }
 
-h3,h4,p{
+h3,h4,h5,li,p,a{
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -79,10 +79,16 @@ h4{
     font-weight: lighter;
 }
 
+h5{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: $purpleColor;
+}
+
 
 p{
     font-size: 2rem;
-    color: #5f6769;
+    color: #696464;
     font-weight: lighter;
 }
 
@@ -92,7 +98,6 @@ button, .skillsUsed li{
     transition: 0.5s;
     background-color: $pinkColor;
     color: $whiteColor;
-    border-radius: 5px;
     border: none;
     padding: 10px 30px;
     &:hover{
@@ -107,11 +112,22 @@ ul{
 
 .skillsUsed{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
     li{
+        cursor: default;
         background-color: $purpleColor;
-        padding: 10px 15px;
+        padding: 8px;
+        margin: 5px;
         display: inline-block;
+        &:hover{
+            background-color: lighten($color: $purpleColor, $amount: 20%);
+        }
     }
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
