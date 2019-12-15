@@ -359,7 +359,7 @@ a {
 }
 
 .aboutMe {
-  background-image: url(./assets/whiteBackground.png);
+  background-image: url(.../assets/whiteBackground.png);
   background-repeat: repeat;
   background-position: center center;
   padding: 80px 0;
@@ -412,7 +412,7 @@ a {
 }
 
 .aboutMe .aboutMeRight {
-  background-image: url(./assets/meAntlers.png);
+  background-image: url(.../assets/meAntlers.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -434,7 +434,7 @@ a {
 }
 
 .aboutMe .aboutMeRight:hover {
-  background-image: url(./assets/meHover.png);
+  background-image: url(.../assets/meHover.png);
 }
 
 @media (max-width: 930px) {
@@ -883,7 +883,7 @@ html {
 }
 
 header {
-  background-image: url(./assets/deerSunRise.jpg);
+  background-image: url(.../assets/deerSunRise.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
