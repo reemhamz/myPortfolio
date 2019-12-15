@@ -1,5 +1,5 @@
 .aboutMe{
-    background-image: url(.../assets/whiteBackground.png);
+    background-image: url(../assets/whiteBackground.png);
     background-repeat: repeat;
     background-position: center center;
     padding: 80px 0;
@@ -30,7 +30,7 @@
         }
     }
     .aboutMeRight{
-        background-image: url(.../assets/meAntlers.png);
+        background-image: url(../assets/meAntlers.png);
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -41,7 +41,7 @@
         cursor: default;
         p{
             position: absolute;
-            top: 2%;
+            top: 20%;
             right: 30%;
             font-size: 3rem;
             background-color: rgba(255,255,255,0.7);
@@ -49,7 +49,7 @@
             border-radius: 20px;
         }
         &:hover{
-            background-image: url(.../assets/meHover.png)
+            background-image: url(../assets/meHover.png)
         }
         @include mqTablet{
             width: 100%;
@@ -64,7 +64,6 @@
                 width: 100%;
                 h3, h4{
                     margin: 0 auto;
-                    // display: block;
                     text-align: center;
                 }
                 .button{
