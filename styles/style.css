@@ -304,6 +304,7 @@ p, button, .skillsUsed li {
 @media (max-width: 422px) {
   p, button, .skillsUsed li {
     font-size: 1.8rem;
+    font-weight: normal;
   }
 }
 

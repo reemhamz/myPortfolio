@@ -13,10 +13,6 @@ a {
 
 h1, h2{
     font-family: 'Berkshire Swash', cursive;
-    // font-family: 'Rock Salt', cursive;
-    // font-family: 'Aguafina Script', cursive;
-    // font-family: 'Sedgwick Ave Display', cursive;
-    // font-family: 'Press Start 2P', cursive;
     color: white;
 }
 
@@ -100,6 +96,7 @@ p, button, .skillsUsed li{
     font-size: 2rem;
     @include mqSmallPhone{
         font-size: 1.8rem;
+        font-weight: normal;
     }
 }
 
