@@ -13,11 +13,15 @@ a {
 
 h1, h2{
     font-family: 'Berkshire Swash', cursive;
+    // font-family: 'Rock Salt', cursive;
+    // font-family: 'Aguafina Script', cursive;
+    // font-family: 'Sedgwick Ave Display', cursive;
+    // font-family: 'Press Start 2P', cursive;
     color: white;
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 6rem;
     text-shadow:1px 1px 5px black, 1px 1px 5px black;    
     span{
         color:$purpleColor;
@@ -69,12 +73,21 @@ h3{
     span{
         color:$pinkColor;
     }
+    @include mqMedPhone{
+        font-size: 3.8rem;
+    }
+}
+
+h4, p, button, .skillsUsed li{
+    font-weight: lighter;
 }
 
 h4{
     margin-top: 20px;
     font-size: 3.2rem;
-    font-weight: lighter;
+    @include mqMedPhone{
+        font-size: 2.5rem;
+    }
 }
 
 h5{
@@ -83,26 +96,30 @@ h5{
     color: $purpleColor;
 }
 
+p, button, .skillsUsed li{
+    font-size: 2rem;
+    @include mqSmallPhone{
+        font-size: 1.8rem;
+    }
+}
 
 p{
-    font-size: 2rem;
     color: $greyColor;
-    font-weight: lighter;
 }
 
 button, .skillsUsed li{
-    font-size: 2.2rem;
-    font-weight: lighter;
     transition: 0.5s;
     background-color: $pinkColor;
     color: $whiteColor;
     border: none;
-    padding: 10px 30px;
+    padding: 10px;
     &:hover{
         background-color: darken($color: $pinkColor, $amount: 10%);
         border-radius: 10px;
     }
 }
+
+
 
 ul{
     list-style: none;

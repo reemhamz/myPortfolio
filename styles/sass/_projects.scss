@@ -55,7 +55,10 @@
         width: 50%;
         text-align: left;
     }
-    @include mqMedTablet{
+    .skillsUsed, .projectButtons{
+        justify-content: flex-start;
+    }
+    @include mqSmallTablet{
         flex-direction: column;
         .firstLeft{
             width: 100%;
@@ -64,10 +67,11 @@
             width: 100%;
             text-align: center;
         }
+        .skillsUsed, .projectButtons{
+        justify-content: center;
     }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-start;
     }
+    
 }
 
 .secondProject{
@@ -85,8 +89,12 @@
         width: 50%;
         text-align: right;
     }
-    @include mqMedTablet{
-        flex-direction: column;
+    .skillsUsed, .projectButtons{
+        justify-content: flex-end;
+    }
+    @include mqSmallTablet{
+        flex-direction: column-reverse;
+        
         .secondRight{
             width: 100%;
         }
@@ -94,10 +102,11 @@
             width: 100%;
             text-align: center;
         }
+        .skillsUsed, .projectButtons{
+        justify-content: center;
     }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-end;
     }
+    
 }
 
 .thirdProject{
@@ -115,7 +124,10 @@
         width: 50%;
         text-align: left;
     }
-    @include mqMedTablet{
+    .skillsUsed, .projectButtons{
+        justify-content: flex-start;
+    }
+    @include mqSmallTablet{
         flex-direction: column;
         .thirdLeft{
             width: 100%;
@@ -124,9 +136,9 @@
             width: 100%;
             text-align: center;
         }
+        .skillsUsed, .projectButtons{
+        justify-content: center;
     }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-start;
     }
 }
 
@@ -150,8 +162,12 @@
         width: 50%;
         text-align: right;
     }
-    @include mqMedTablet{
-        flex-direction: column;
+    .skillsUsed, .projectButtons{
+        justify-content: flex-end;
+    }
+    @include mqSmallTablet{
+        flex-direction: column-reverse;
+        
         .fourthRight{
             width: 100%;
         }
@@ -159,9 +175,9 @@
             width: 100%;
             text-align: center;
         }
+        .skillsUsed, .projectButtons{
+        justify-content: center;
     }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-end;
     }
 }
 
@@ -180,7 +196,10 @@
         width: 50%;
         text-align: left;
     }
-    @include mqMedTablet{
+    .skillsUsed, .projectButtons{
+        justify-content: flex-start;
+    }
+    @include mqSmallTablet{
         flex-direction: column;
         .fifthLeft{
             width: 100%;
@@ -189,8 +208,8 @@
             width: 100%;
             text-align: center;
         }
+        .skillsUsed, .projectButtons{
+        justify-content: center;
     }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-start;
     }
 }

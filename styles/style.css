@@ -198,7 +198,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   text-shadow: 1px 1px 5px black, 1px 1px 5px black;
 }
 
@@ -270,10 +270,25 @@ h3 span {
   color: #FA506F;
 }
 
+@media (max-width: 565px) {
+  h3 {
+    font-size: 3.8rem;
+  }
+}
+
+h4, p, button, .skillsUsed li {
+  font-weight: lighter;
+}
+
 h4 {
   margin-top: 20px;
   font-size: 3.2rem;
-  font-weight: lighter;
+}
+
+@media (max-width: 565px) {
+  h4 {
+    font-size: 2.5rem;
+  }
 }
 
 h5 {
@@ -282,21 +297,27 @@ h5 {
   color: #c06c84;
 }
 
-p {
+p, button, .skillsUsed li {
   font-size: 2rem;
+}
+
+@media (max-width: 422px) {
+  p, button, .skillsUsed li {
+    font-size: 1.8rem;
+  }
+}
+
+p {
   color: #696464;
-  font-weight: lighter;
 }
 
 button, .skillsUsed li {
-  font-size: 2.2rem;
-  font-weight: lighter;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #FA506F;
   color: #ffff;
   border: none;
-  padding: 10px 30px;
+  padding: 10px;
 }
 
 button:hover, .skillsUsed li:hover {
@@ -368,9 +389,14 @@ a {
 
 .aboutMe .aboutMeLeft {
   width: 45%;
+  text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.aboutMe .aboutMeLeft p {
+  text-align: left;
 }
 
 .aboutMe .aboutMeLeft p {
@@ -422,7 +448,7 @@ a {
     width: 100%;
   }
   .aboutMe .aboutMeLeft h3, .aboutMe .aboutMeLeft h4 {
-    display: block;
+    margin: 0 auto;
     text-align: center;
   }
   .aboutMe .aboutMeLeft .button {
@@ -479,9 +505,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   margin-top: 20px;
@@ -495,8 +521,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
   color: #FA506F;
   text-align: center;
 }
@@ -582,7 +608,13 @@ a {
   text-align: left;
 }
 
-@media (max-width: 1175px) {
+.firstProject .skillsUsed, .firstProject .projectButtons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 740px) {
   .firstProject {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -596,12 +628,11 @@ a {
     width: 100%;
     text-align: center;
   }
-}
-
-.firstProject .skillsUsed, .firstProject .projectButtons {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  .firstProject .skillsUsed, .firstProject .projectButtons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .secondProject {
@@ -630,12 +661,18 @@ a {
   text-align: right;
 }
 
-@media (max-width: 1175px) {
+.secondProject .skillsUsed, .secondProject .projectButtons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 740px) {
   .secondProject {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .secondProject .secondRight {
     width: 100%;
@@ -644,12 +681,11 @@ a {
     width: 100%;
     text-align: center;
   }
-}
-
-.secondProject .skillsUsed, .secondProject .projectButtons {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  .secondProject .skillsUsed, .secondProject .projectButtons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .thirdProject {
@@ -678,7 +714,13 @@ a {
   text-align: left;
 }
 
-@media (max-width: 1175px) {
+.thirdProject .skillsUsed, .thirdProject .projectButtons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 740px) {
   .thirdProject {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -692,12 +734,11 @@ a {
     width: 100%;
     text-align: center;
   }
-}
-
-.thirdProject .skillsUsed, .thirdProject .projectButtons {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  .thirdProject .skillsUsed, .thirdProject .projectButtons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .fourthProject {
@@ -730,12 +771,18 @@ a {
   text-align: right;
 }
 
-@media (max-width: 1175px) {
+.fourthProject .skillsUsed, .fourthProject .projectButtons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 740px) {
   .fourthProject {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .fourthProject .fourthRight {
     width: 100%;
@@ -744,12 +791,11 @@ a {
     width: 100%;
     text-align: center;
   }
-}
-
-.fourthProject .skillsUsed, .fourthProject .projectButtons {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  .fourthProject .skillsUsed, .fourthProject .projectButtons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .fifthProject {
@@ -778,7 +824,13 @@ a {
   text-align: left;
 }
 
-@media (max-width: 1175px) {
+.fifthProject .skillsUsed, .fifthProject .projectButtons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 740px) {
   .fifthProject {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -792,12 +844,11 @@ a {
     width: 100%;
     text-align: center;
   }
-}
-
-.fifthProject .skillsUsed, .fifthProject .projectButtons {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  .fifthProject .skillsUsed, .fifthProject .projectButtons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .wrapper {

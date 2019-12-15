@@ -3,7 +3,6 @@
     text-align: center;
     padding: 80px 0;
     .wrapper{
-        
         h4{
             position: relative;
             display: inline-block;
@@ -28,7 +27,7 @@
         .skillsIcons{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             border-top: 2px solid white;
             border-bottom: 2px solid white;
             margin-top: 20px;
@@ -36,8 +35,8 @@
             li{
                 display: flex;
                 flex-direction: column;
-                margin: 10px;
-                padding: 20px;
+                margin: 5px;
+                padding: 10px;
                 color: $pinkColor;
                 text-align: center;
             }

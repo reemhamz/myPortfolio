@@ -13,6 +13,10 @@
     }
     .aboutMeLeft{
         width: 45%;
+        text-align: center;
+        p{
+            text-align: left;
+        }
         align-self: center;
         p{
             margin-top: 20px;
@@ -60,7 +64,8 @@
         @include mqTablet{
                 width: 100%;
                 h3, h4{
-                    display: block;
+                    margin: 0 auto;
+                    // display: block;
                     text-align: center;
                 }
                 .button{
