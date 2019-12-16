@@ -92,7 +92,7 @@ h5{
     }
 }
 
-p, button, .skillsUsed li, input, textarea{
+p, button, .skillsUsed li, .pageNav li, input, textarea{
     font-size: 2rem;
     @include mqSmallPhone{
         font-size: 1.8rem;

@@ -65,11 +65,13 @@
 }
 
 .contactForm{
-            margin: 30px;
+            margin: 30px auto;
             width: 60%;
             background-color: $lightPink;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            
             .inputRow{
                 display: flex;
                 justify-content: space-between;
