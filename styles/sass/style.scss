@@ -55,9 +55,10 @@ header {
         right: 2%;
         top: 2%;
         display: inline-block;
+        z-index: 30;
+        
         li{
             margin: 10px 0;
-            z-index: 30;
             i{
                 color: $purpleColor;
                 border: 2px dotted white;

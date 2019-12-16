@@ -1094,11 +1094,11 @@ header .socialIcons {
   right: 2%;
   top: 2%;
   display: inline-block;
+  z-index: 30;
 }
 
 header .socialIcons li {
   margin: 10px 0;
-  z-index: 30;
 }
 
 header .socialIcons li i {
