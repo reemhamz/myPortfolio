@@ -58,7 +58,7 @@
     .skillsUsed, .projectButtons{
         justify-content: flex-start;
     }
-    @include mqSmallTablet{
+    @include mqTinyTablet{
         flex-direction: column;
         .firstLeft{
             width: 100%;
@@ -92,7 +92,7 @@
     .skillsUsed, .projectButtons{
         justify-content: flex-end;
     }
-    @include mqSmallTablet{
+    @include mqTinyTablet{
         flex-direction: column-reverse;
         
         .secondRight{
@@ -127,7 +127,7 @@
     .skillsUsed, .projectButtons{
         justify-content: flex-start;
     }
-    @include mqSmallTablet{
+    @include mqTinyTablet{
         flex-direction: column;
         .thirdLeft{
             width: 100%;
@@ -165,7 +165,7 @@
     .skillsUsed, .projectButtons{
         justify-content: flex-end;
     }
-    @include mqSmallTablet{
+    @include mqTinyTablet{
         flex-direction: column-reverse;
         
         .fourthRight{
@@ -199,7 +199,7 @@
     .skillsUsed, .projectButtons{
         justify-content: flex-start;
     }
-    @include mqSmallTablet{
+    @include mqTinyTablet{
         flex-direction: column;
         .fifthLeft{
             width: 100%;

@@ -5,6 +5,7 @@
 @import "./aboutMe";
 @import "./skills";
 @import "./projects";
+@import "./contact";
 
 .wrapper {
     max-width: 1260px;
@@ -29,6 +30,7 @@ body {
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -47,7 +49,24 @@ header {
     .headerContent{
         position: relative;
         z-index: 10;
-}
+    }
+    .socialIcons{
+        position: fixed;
+        right: 2%;
+        top: 2%;
+        display: inline-block;
+        li{
+            margin: 10px 0;
+            z-index: 30;
+            i{
+                color: $purpleColor;
+                border: 2px dotted white;
+            }
+        }
+        @include mqMedPhone{
+            display: none;
+        }
+    }
 }
 
 .particles-js-canvas-el{

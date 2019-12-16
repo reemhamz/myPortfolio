@@ -17,6 +17,12 @@
 }
 
 @mixin mqSmallTablet{
+    @media (max-width: 870px){
+        @content;
+    }
+}
+
+@mixin mqTinyTablet{
     @media (max-width: 740px){
         @content;
     }

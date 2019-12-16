@@ -254,7 +254,7 @@ h2 {
   }
 }
 
-h3, h4, h5, li, p, a {
+h3, h4, h5, li, p, a, button, input, textarea {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -276,13 +276,10 @@ h3 span {
   }
 }
 
-h4, p, button, .skillsUsed li {
-  font-weight: lighter;
-}
-
 h4 {
   margin-top: 20px;
   font-size: 3.2rem;
+  font-weight: lighter;
 }
 
 @media (max-width: 565px) {
@@ -297,14 +294,19 @@ h5 {
   color: #c06c84;
 }
 
-p, button, .skillsUsed li {
+@media (max-width: 565px) {
+  h5 {
+    font-size: 2.2rem;
+  }
+}
+
+p, button, .skillsUsed li, input, textarea {
   font-size: 2rem;
 }
 
 @media (max-width: 422px) {
-  p, button, .skillsUsed li {
+  p, button, .skillsUsed li, input, textarea {
     font-size: 1.8rem;
-    font-weight: normal;
   }
 }
 
@@ -357,6 +359,13 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+input, textarea {
+  border: 1px solid #282c37;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 .aboutMe {
@@ -852,6 +861,175 @@ a {
   }
 }
 
+.contact {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.contact h4 {
+  position: relative;
+  display: inline-block;
+  padding: 0 50px;
+}
+
+.contact h4::before {
+  position: absolute;
+  content: "—";
+  top: 0;
+  left: 0;
+  color: #FA506F;
+}
+
+.contact h4::after {
+  position: absolute;
+  content: "—";
+  top: 0;
+  right: 0;
+  color: #FA506F;
+}
+
+.contact .wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 870px) {
+  .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.socials h5 {
+  color: #FA506F;
+}
+
+.socials .socialIcons {
+  margin-top: 20px;
+  display: none;
+}
+
+.socials .socialIcons li {
+  z-index: 30;
+}
+
+.socials .socialIcons li i {
+  color: #FA506F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.socials .socialIcons li i:hover {
+  color: #FFC6C7;
+}
+
+@media (max-width: 565px) {
+  .socials .socialIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.contactForm {
+  margin: 30px;
+  width: 60%;
+  background-color: #FFC6C7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm .inputRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactForm .inputRow .emailInput, .contactForm .inputRow .nameInput {
+  width: 49%;
+}
+
+@media (max-width: 565px) {
+  .contactForm .inputRow .emailInput, .contactForm .inputRow .nameInput {
+    width: 100%;
+  }
+}
+
+@media (max-width: 565px) {
+  .contactForm .inputRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contactForm form {
+  border: 1px solid #282c37;
+  padding: 25px;
+}
+
+@media (max-width: 870px) {
+  .contactForm {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+
+input:focus ~ .floatingLabel,
+input:not(:focus):valid ~ .floatingLabel {
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.floatingLabel {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 85%;
@@ -881,6 +1059,7 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -908,6 +1087,29 @@ header {
 header .headerContent {
   position: relative;
   z-index: 10;
+}
+
+header .socialIcons {
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  display: inline-block;
+}
+
+header .socialIcons li {
+  margin: 10px 0;
+  z-index: 30;
+}
+
+header .socialIcons li i {
+  color: #c06c84;
+  border: 2px dotted white;
+}
+
+@media (max-width: 565px) {
+  header .socialIcons {
+    display: none;
+  }
 }
 
 .particles-js-canvas-el {

@@ -25,24 +25,44 @@
 
             <h1>Hi, I'm <span>Reem</span></h1>
             <h2>a web developer</h2>
-
         </div>
+
+        <ul class="socialIcons topIcons">
+            <li><a href="https://twitter.com/reemcodes" aria-label="Go to Reem's Twitter"><i class="fab fa-twitter fa-4x" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/reemhamz" aria-label="Go to Reem's Github"><i class="fab fa-github fa-4x"
+                        aria-hidden="true"></i></a></li>
+            <li><a href="https://dev.to/reemhamz" aria-label="Go to Reem's Dev Community Page"><i
+                        class="fab fa-dev fa-4x"
+                        aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/reemhamoui/" aria-label="Go to Reem's LinkedIn"><i
+                        class="fab fa-linkedin fa-4x" aria-hidden="
+                        true"></i></a></li>
+        </ul>
+
         <div class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
+            <a href="#aboutMe">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
 
     </header>
 
-    <section class="aboutMe">
+    <main id="main">
+
+    
+    <section class="aboutMe" id="aboutMe">
         <div class="wrapper">
             <div class="aboutMeLeft">
                 <h3>About <span>me</span></h3>
                 <h4>Web developer & former data analyst</h4>
                 <p>
                     I'm <span>Reem</span>, a recent graduate from the web development bootcamp at Juno College (formerly
-                    HackerYou). I was first exposed to programming
+                    HackerYou). 
+                    <br>
+                    I was first exposed to programming
                     when I was a data analyst, where I utilized Python to create automated tasks. From there, I was
                     deeply interested in what else could be accomplished with the power of code, and signed up for a
                     handful of online courses. From those courses, I found myself drawn most to web development due to
@@ -243,6 +263,63 @@
             </div>
         </div>
     </section>
+
+    <section class="contact">
+        <h3>Contact <span>me</span></h3>
+        <br>
+        <h4>I love making new pals</h4>
+        <div class="wrapper">
+        <div class="socials">
+            <h5>Thanks for stopping by!</h5>
+            <h5>👾 Get in touch 👾</h5>
+
+            <ul class="socialIcons bottomIcons">
+                <li><a href="https://twitter.com/reemcodes" aria-label="Go to Reem's Twitter"><i
+                            class="fab fa-twitter fa-4x" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/reemhamz" aria-label="Go to Reem's Github"><i
+                            class="fab fa-github fa-4x" aria-hidden="true"></i></a></li>
+                <li><a href="https://dev.to/reemhamz" aria-label="Go to Reem's Dev Community Page"><i
+                            class="fab fa-dev fa-4x" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/reemhamoui/" aria-label="Go to Reem's LinkedIn"><i
+                            class="fab fa-linkedin fa-4x" aria-hidden="
+                        true"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="contactForm">
+            
+            <form action="http://www.focuspocus.io/magic/me@reemh.dev" method="POST">
+                <legend class="visuallyHidden">Contact Reem</legend>
+                <div class="inputRow">
+                
+                <div class="nameInput">
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <span class="floatingLabel">Name</span>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required="">
+                </div>
+
+                <div class="emailInput">
+                    <label for="email" class="visuallyHidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required="">
+                </div>
+                </div>
+
+                <div class="messageInput">
+                    <label for="textarea" class="visuallyHidden">Message</label>
+                    <textarea name="message" id="textarea" cols="30" rows="7" placeholder="Type up your message!"></textarea>
+                </div>
+
+                <div class="submitMessage">
+                    <label for="submit" class="visuallyHidden">Send Message</label>
+                    <button type="submit">Shoot me your message!</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+
+    </main>
 
 
     <script type="text/javascript" src="particles.js"></script>
