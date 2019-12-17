@@ -66,6 +66,10 @@ header {
             i{
                 color: $purpleColor;
                 text-shadow: 1px 1px white;
+                transition: 0.5s;
+                &:hover{
+                    color: $lightPink;
+                }
             }
         }
         @include mqMedPhone{

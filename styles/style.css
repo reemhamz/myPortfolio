@@ -314,7 +314,7 @@ p {
   color: #696464;
 }
 
-button, .skillsUsed li {
+button {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #FA506F;
@@ -323,9 +323,12 @@ button, .skillsUsed li {
   padding: 10px;
 }
 
-button:hover, .skillsUsed li:hover {
+button:hover {
   background-color: #f91e46;
-  border-radius: 10px;
+  font-size: 2.2rem;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  border-radius: 20px;
 }
 
 ul {
@@ -346,14 +349,12 @@ ul {
 
 .skillsUsed li {
   cursor: default;
-  background-color: #c06c84;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #c06c84;
   padding: 8px;
   margin: 5px;
   display: inline-block;
-}
-
-.skillsUsed li:hover {
-  background-color: #cf90a2;
 }
 
 a {
@@ -418,6 +419,7 @@ input, textarea {
 }
 
 .aboutMe .aboutMeLeft button {
+  width: 80%;
   margin-top: 20px;
 }
 
@@ -466,7 +468,7 @@ input, textarea {
     text-align: center;
   }
   .aboutMe .aboutMeLeft .button button {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -483,6 +485,7 @@ input, textarea {
 
 .skills {
   background-color: #FAFAFA;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 80px 0;
 }
@@ -518,8 +521,8 @@ input, textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid #ffff;
+  border-bottom: 2px solid #ffff;
   margin-top: 20px;
 }
 
@@ -862,7 +865,11 @@ input, textarea {
 }
 
 .contact {
-  background-color: #FAFAFA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.8))), url(../assets/treePattern.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url(../assets/treePattern.jpg);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: contain;
   text-align: center;
   padding-top: 80px;
 }
@@ -887,6 +894,10 @@ input, textarea {
   top: 0;
   right: 0;
   color: #FA506F;
+}
+
+.contact h4 span {
+  color: #FFC6C7;
 }
 
 .contact .wrapper {
@@ -1001,8 +1012,13 @@ input, textarea {
 }
 
 .contactForm form {
-  border: 1px solid #282c37;
+  border: 2px dashed #282c37;
   padding: 25px;
+  display: inline-block;
+}
+
+.contactForm form textarea {
+  resize: none;
 }
 
 @media (max-width: 870px) {
@@ -1016,24 +1032,6 @@ input, textarea {
   .contactForm form {
     padding: 10px;
   }
-}
-
-input:focus ~ .floatingLabel,
-input:not(:focus):valid ~ .floatingLabel {
-  top: 8px;
-  bottom: 10px;
-  left: 20px;
-  font-size: 11px;
-  opacity: 1;
-}
-
-.floatingLabel {
-  position: absolute;
-  pointer-events: none;
-  left: 20px;
-  top: 18px;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
 }
 
 .wrapper {
@@ -1121,6 +1119,12 @@ header .socialIcons li {
 header .socialIcons li i {
   color: #c06c84;
   text-shadow: 1px 1px white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .socialIcons li i:hover {
+  color: #FFC6C7;
 }
 
 @media (max-width: 565px) {

@@ -1,9 +1,0 @@
-ScrollReveal().reveal('.aboutMe', { delay: 1000 });
-ScrollReveal().reveal('.skills', { delay: 1000 });
-ScrollReveal().reveal('.projects', { delay: 1000 });
-ScrollReveal().reveal('.firstProject', { delay: 1000 });
-ScrollReveal().reveal('.secondProject', { delay: 1000 });
-ScrollReveal().reveal('.thirdProject', { delay: 1000 });
-ScrollReveal().reveal('.fourthProject', { delay: 1000 });
-ScrollReveal().reveal('.fifthProject', { delay: 1000 });
-ScrollReveal().reveal('.contact', { delay: 1000 });

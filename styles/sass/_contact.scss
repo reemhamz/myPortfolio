@@ -1,9 +1,10 @@
 .contact{
-    background-color: $lightGreyColor;
+    background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.8)), url(../assets/treePattern.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: contain;
     text-align: center;
     padding-top: 80px;
-    
-    
         h4{
             position: relative;
             display: inline-block;
@@ -21,6 +22,9 @@
                 top: 0;
                 right: 0;
                 color: $pinkColor;
+            }
+            span{
+                color: $lightPink;
             }
     }
     
@@ -44,7 +48,6 @@
     }
     .socialIcons{
         margin-top: 20px;
-        
         display: none;
         
         li{
@@ -86,9 +89,12 @@
                         }
             }
             form{
-                border: 1px solid #282c37;
+                border: 2px dashed #282c37;
                 padding: 25px;
-                
+                display: inline-block;
+                textarea{
+                    resize: none;
+                }
             }
             @include mqSmallTablet{
                 justify-content: center;
@@ -99,22 +105,3 @@
                 }
             }
         }
-
-
-
-input:focus ~ .floatingLabel,
-input:not(:focus):valid ~ .floatingLabel{
-  top: 8px;
-  bottom: 10px;
-  left: 20px;
-  font-size: 11px;
-  opacity: 1;
-}
-
-.floatingLabel {
-  position: absolute;
-  pointer-events: none;
-  left: 20px;
-  top: 18px;
-  transition: 0.2s ease all;
-}
