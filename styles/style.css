@@ -198,14 +198,15 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 10rem;
   text-shadow: 1px 1px 5px black, 1px 1px 5px black;
 }
 
 h1 span {
-  color: #c06c84;
+  color: #524771;
   position: relative;
   z-index: 20;
+  text-shadow: 1px 1px 5px #ffff, 1px 1px 5px #ffff;
 }
 
 h1 span::before {
@@ -262,12 +263,12 @@ h3 {
   font-size: 4.8rem;
   text-transform: uppercase;
   font-weight: 500;
-  border-bottom: 2px dashed #FA506F;
+  border-bottom: 2px dashed #FC6F5C;
   display: inline-block;
 }
 
 h3 span {
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 @media (max-width: 565px) {
@@ -291,7 +292,7 @@ h4 {
 h5 {
   font-size: 3rem;
   font-weight: normal;
-  color: #c06c84;
+  color: #00a79d;
 }
 
 @media (max-width: 565px) {
@@ -317,14 +318,14 @@ p {
 button {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background-color: #FA506F;
+  background-color: #FC6F5C;
   color: #ffff;
   border: none;
   padding: 10px;
 }
 
 button:hover {
-  background-color: #f91e46;
+  background-color: #fb432a;
   font-size: 2.2rem;
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
@@ -351,7 +352,7 @@ ul {
   cursor: default;
   background-color: transparent;
   color: black;
-  border: 1px solid #c06c84;
+  border: 1px solid #00a79d;
   padding: 8px;
   margin: 5px;
   display: inline-block;
@@ -409,7 +410,8 @@ input, textarea {
 }
 
 .aboutMe .aboutMeLeft p span {
-  color: #FA506F;
+  color: #00a79d;
+  font-weight: 800;
 }
 
 .aboutMe .aboutMeLeft button {
@@ -489,7 +491,7 @@ input, textarea {
   content: "—";
   top: 0;
   left: 0;
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 .skills .wrapper h4::after {
@@ -497,7 +499,7 @@ input, textarea {
   content: "—";
   top: 0;
   right: 0;
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 .skills .skillsIconsOne, .skills .skillsIconsTwo {
@@ -522,16 +524,16 @@ input, textarea {
           flex-direction: column;
   margin: 5px;
   padding: 10px;
-  color: #FA506F;
+  color: #00adb5;
   text-align: center;
 }
 
 .skillsIconsOne {
-  border-top: 2px solid #FFC6C7;
+  border-top: 2px solid #ffff;
 }
 
 .skillsIconsTwo {
-  border-bottom: 2px solid #FFC6C7;
+  border-bottom: 2px solid #ffff;
 }
 
 .projects {
@@ -554,7 +556,7 @@ input, textarea {
   content: "—";
   top: 0;
   left: 0;
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 .projects h4::after {
@@ -562,7 +564,7 @@ input, textarea {
   content: "—";
   top: 0;
   right: 0;
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 .projects .wrapper {
@@ -759,7 +761,7 @@ input, textarea {
 }
 
 .fourthProject p a {
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 .fourthProject .fourthRight {
@@ -879,7 +881,7 @@ input, textarea {
   content: "—";
   top: 0;
   left: 0;
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 .contact h4::after {
@@ -887,11 +889,11 @@ input, textarea {
   content: "—";
   top: 0;
   right: 0;
-  color: #FA506F;
+  color: #FC6F5C;
 }
 
 .contact h4 span {
-  color: #FFC6C7;
+  color: #ff9776;
 }
 
 .contact .wrapper {
@@ -941,13 +943,13 @@ input, textarea {
 }
 
 .socials .socialIcons li i {
-  color: #FA506F;
+  color: #FC6F5C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .socials .socialIcons li i:hover {
-  color: #FFC6C7;
+  color: #ff9776;
 }
 
 @media (max-width: 565px) {
@@ -964,7 +966,7 @@ input, textarea {
 .contactForm {
   margin: 30px auto;
   width: 60%;
-  background-color: #FFC6C7;
+  background-color: #00adb5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1015,6 +1017,10 @@ input, textarea {
   resize: none;
 }
 
+.contactForm button {
+  background-color: #524771;
+}
+
 @media (max-width: 870px) {
   .contactForm {
     -webkit-box-pack: center;
@@ -1053,6 +1059,7 @@ img {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 html {
@@ -1061,7 +1068,7 @@ html {
 }
 
 header {
-  background-image: url(../assets/deerSunRise.jpg);
+  background-image: url(../assets/deerSun.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1111,13 +1118,13 @@ header .socialIcons li {
 }
 
 header .socialIcons li i {
-  color: #c06c84;
+  color: #FC6F5C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 header .socialIcons li i:hover {
-  color: #FFC6C7;
+  color: #ff9776;
 }
 
 @media (max-width: 565px) {
@@ -1127,7 +1134,7 @@ header .socialIcons li i:hover {
 }
 
 .menuIcon {
-  color: #c06c84;
+  color: #FC6F5C;
   position: fixed;
   right: 2%;
   top: 2%;
@@ -1138,27 +1145,48 @@ header .socialIcons li i:hover {
 }
 
 .menuIcon:hover {
-  color: lightPink;
+  color: #ff9776;
 }
 
 .pageNav {
   position: absolute;
-  top: 30%;
-  right: 30%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 30;
+  max-height: 100vh;
+  display: none;
+}
+
+.pageNav .exIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FC6F5C;
+  top: 2%;
+  right: 2%;
 }
 
 .pageNav ul {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
 }
 
 .pageNav ul li {
-  margin: 10px;
-  color: #c06c84;
+  margin: 60px 0;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.pageNav ul li a {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .arrow {
@@ -1233,7 +1261,7 @@ header .socialIcons li i:hover {
 }
 
 footer {
-  background-color: #FA506F;
+  background-color: #FC6F5C;
   text-align: center;
 }
 

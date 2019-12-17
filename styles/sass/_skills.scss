@@ -13,14 +13,14 @@
                 content: "—";
                 top: 0;
                 left: 0;
-                color: $pinkColor;
+                color: $orangeColor;
             }
             &::after{
                 position: absolute;
                 content: "—";
                 top: 0;
                 right: 0;
-                color: $pinkColor;
+                color: $orangeColor;
             }
         }
     }
@@ -36,16 +36,22 @@
                 flex-direction: column;
                 margin: 5px;
                 padding: 10px;
-                color: $pinkColor;
+                color: $blueGreenTeal;
                 text-align: center;
             }
         }
     }
 
 .skillsIconsOne{
-    border-top: 2px solid $lightPink;
+    border-top: 2px solid $whiteColor;
+    li{
+        // color: $teal;
+    }
 }
 
 .skillsIconsTwo{
-    border-bottom: 2px solid $lightPink;
+    border-bottom: 2px solid $whiteColor;
+    li{
+        // color: $lightOrange;
+    }
 }

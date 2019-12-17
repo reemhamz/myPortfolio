@@ -14,14 +14,14 @@
                 content: "—";
                 top: 0;
                 left: 0;
-                color: $pinkColor;
+                color: $orangeColor;
             }
             &::after{
                 position: absolute;
                 content: "—";
                 top: 0;
                 right: 0;
-                color: $pinkColor;
+                color: $orangeColor;
             }
         
     }
@@ -148,7 +148,7 @@
     justify-content: space-between;
         p{
             a{
-                color: $pinkColor;
+                color: $orangeColor;
             }
         }
     .fourthRight{

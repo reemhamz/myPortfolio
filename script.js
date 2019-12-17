@@ -8,9 +8,23 @@ AOS.init();
 
 
 $(document).ready(function () {
-    $(".menuIcon").on('click', function () {
-        $("nav").toggleClass("menu_show");
+
+    $('.pageNav').hide();
+
+    $('.menuIcon').on('click', function () {
+        $('.pageNav').show();
+        $('.menuIcon').hide();
     });
+
+    $('.exIcon').on('click', function () {
+        $('.pageNav').hide();
+        $('.menuIcon').show();
+    })
+
+    $('.navItem').on('click', function () {
+        $('.pageNav').hide();
+        $('.menuIcon').show();
+    })
 
     AOS.init(
         {

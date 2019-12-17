@@ -14,17 +14,17 @@
                 content: "—";
                 top: 0;
                 left: 0;
-                color: $pinkColor;
+                color: $orangeColor;
             }
             &::after{
                 position: absolute;
                 content: "—";
                 top: 0;
                 right: 0;
-                color: $pinkColor;
+                color: $orangeColor;
             }
             span{
-                color: $lightPink;
+                color: $lightOrange;
             }
     }
     
@@ -53,10 +53,10 @@
         li{
             z-index: 30;
             i{
-                color: $pinkColor;
+                color: $orangeColor;
                 transition: 0.5s;
                 &:hover{
-                    color: $lightPink;
+                    color: $lightOrange;
                 }
             }
         }
@@ -70,7 +70,7 @@
 .contactForm{
             margin: 30px auto;
             width: 60%;
-            background-color: $lightPink;
+            background-color: $blueGreenTeal;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -95,6 +95,9 @@
                 textarea{
                     resize: none;
                 }
+            }
+            button{
+                background-color: $darkTeal;
             }
             @include mqSmallTablet{
                 justify-content: center;

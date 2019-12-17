@@ -26,6 +26,7 @@ img{
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 html{
@@ -34,7 +35,7 @@ html{
 }
 
 header {
-    background-image: url(../assets/deerSunRise.jpg);
+    background-image: url(../assets/deerSun.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,10 +65,10 @@ header {
         li{
             margin: 10px 0;
             i{
-                color: $purpleColor;
+                color: $orangeColor;
                 transition: 0.5s;
                 &:hover{
-                    color: $lightPink;
+                    color: $lightOrange;
                 }
             }
         }
@@ -78,7 +79,7 @@ header {
 }
 
 .menuIcon{
-    color: $purpleColor;
+    color: $orangeColor;
     position: fixed;
     right: 2%;
     top: 2%;
@@ -86,22 +87,39 @@ header {
     z-index: 30;
     transition: 0.5s;
     &:hover{
-        color: lightPink;
+        color: $lightOrange;
     }
 }
 
 .pageNav{
     position: absolute;
-    top: 30%;
-    right: 30%;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
     align-self: center;
     z-index: 30;
+    max-height: 100vh;
+    display: none;
+    .exIcon{
+        position:absolute;
+        top:0;
+        right:0;
+        color: $orangeColor;
+        top: 2%;
+        right: 2%;
+    }
     ul{
-        background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+        background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
         li{
-            // display: inline-block;
-            margin: 10px;
-            color: $purpleColor;
+            margin: 60px 0;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            a{
+                color: black;
+                transition: 0.5s;
+            }
         }
     }
 }
@@ -155,7 +173,7 @@ header {
 
 // Footer styling
 footer{
-    background-color: $pinkColor;
+    background-color: $orangeColor;
     text-align: center;
     p{
         color: white;
