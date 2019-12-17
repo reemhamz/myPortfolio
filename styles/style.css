@@ -329,7 +329,7 @@ button:hover {
   font-size: 2.2rem;
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 
 ul {
@@ -1275,4 +1275,8 @@ footer span {
 
 footer span a {
   text-decoration: underline;
+}
+
+footer span a:hover {
+  color: #524771;
 }
