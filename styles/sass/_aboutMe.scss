@@ -13,12 +13,9 @@
     }
     .aboutMeLeft{
         width: 45%;
-        text-align: center;
+        text-align: left;
         p{
             text-align: left;
-        }
-        align-self: center;
-        p{
             margin-top: 20px;
             span{
                 color: $pinkColor;
@@ -28,54 +25,43 @@
             width: 80%;
             margin-top: 20px;
         }
-    }
-    .aboutMeRight{
-        background-image: url(../assets/meAntlers.png);
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 50%;
-        min-height: 50vh;
-        border-radius: 2px 20px;
-        position: relative;
-        cursor: default;
-        p{
-            position: absolute;
-            top: 20%;
-            right: 30%;
-            font-size: 3rem;
-            background-color: rgba(255,255,255,0.7);
-            padding: 10px;
-            border-radius: 20px;
-        }
-        &:hover{
-            background-image: url(../assets/meHover.png)
-        }
         @include mqTablet{
             width: 100%;
-        }
-    }
-    
-}
-
-.aboutMe{
-    .aboutMeLeft{
-        @include mqTablet{
-                width: 100%;
-                h3, h4{
-                    margin: 0 auto;
-                    text-align: center;
-                }
+            text-align: center;
                 .button{
                     margin: 0 auto;
                     text-align: center;
-                    // width: 50%;
                     button{
                         width:80%;
                     }
                 }
             }
     }
+
+
+    .aboutMeRight{
+        align-self: center;
+        width: 50%;
+        border-radius: 2px 20px;
+        position: relative;
+        cursor: default;
+        .meMustache{
+            display: none;
+        }
+        &:hover{
+            .meAntlers{
+                display: none;
+            }
+            .meMustache{
+                display: block;
+            }
+        }
+        @include mqBigPhone{
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }
+    
 }
 
 .aboutMe.wrapper{

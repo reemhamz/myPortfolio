@@ -138,3 +138,17 @@ header {
 .particles-js-canvas-el{
     position: absolute;
 }
+
+
+// Footer styling
+footer{
+    background-color: $pinkColor;
+    text-align: center;
+    p{
+        color: white;
+    }
+    span{
+        font-size: 1.6rem;
+        text-decoration: underline;
+    }
+}
