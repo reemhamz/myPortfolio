@@ -57,7 +57,7 @@ header {
     .socialIcons{
         position: fixed;
         right: 2%;
-        top: 2%;
+        top: 30%;
         display: inline-block;
         z-index: 30;
         
@@ -65,7 +65,6 @@ header {
             margin: 10px 0;
             i{
                 color: $purpleColor;
-                text-shadow: 1px 1px white;
                 transition: 0.5s;
                 &:hover{
                     color: $lightPink;
@@ -78,17 +77,31 @@ header {
     }
 }
 
+.menuIcon{
+    color: $purpleColor;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    display: inline-block;
+    z-index: 30;
+    transition: 0.5s;
+    &:hover{
+        color: lightPink;
+    }
+}
+
 .pageNav{
     position: absolute;
-    top: 2%;
+    top: 30%;
+    right: 30%;
     align-self: center;
     z-index: 30;
     ul{
+        background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
         li{
-            display: inline-block;
+            // display: inline-block;
             margin: 10px;
-            color: $whiteColor;
-            
+            color: $purpleColor;
         }
     }
 }
@@ -149,6 +162,8 @@ footer{
     }
     span{
         font-size: 1.6rem;
-        text-decoration: underline;
+        a{
+            text-decoration: underline;
+        }
     }
 }

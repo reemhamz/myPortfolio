@@ -23,8 +23,13 @@
 
 <body>
     <header id="particles-js" id="home">
+
+        <div class="burgerMenu">
+            <a href="#" class="menuIcon"><i class="fas fa-bars fa-5x"></i></a>
+        </div>
+
         <nav class="pageNav">
-            <ul>
+            <ul class=navList>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutMe">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -67,7 +72,7 @@
     
     <section class="aboutMe" id="aboutMe">
         <div class="wrapper">
-            <div class="aboutMeLeft">
+            <div class="aboutMeLeft aos-init aos-animate" data-aos="fade-right">
                 <h3>About <span>me</span></h3>
                 <h4>Web developer & former data analyst</h4>
                 <p>
@@ -90,7 +95,7 @@
                     </button>
                 </div>
             </div>
-            <div class="aboutMeRight" >
+            <div class="aboutMeRight aos-animate aos-init" data-aos="fade-left" >
                 <!-- <p>Hover over me!</p> -->
                 <img class="meAntlers" src="./assets/meAntlers-min.png" alt="Me with deer antlers sketched on my head">
                 <img class="meMustache" src="./assets/meHover-min.png" alt="Me with a doodle of a funny mustache and sun glasses">
@@ -103,7 +108,7 @@
             <h3>My <span>skills</span></h3>
             <br>
             <h4>Current toolbox</h4>
-            <ul class="skillsIconsOne">
+            <ul class="skillsIconsOne aos-init aos-animate" data-aos="fade-right">
                 <li><i class="fab fa-html5 fa-6x" aria-hidden="true"></i>
                     <p>HTML5</p>
                 </li>
@@ -123,7 +128,7 @@
                     <p>Git</p>
                 </li>
                 </ul>
-                <ul class="skillsIconsTwo">                
+                <ul class="skillsIconsTwo aos-animate aos-init" data-aos="fade-left">                
                 <li><i class="devicon-react-original fa-6x" aria-hidden="true"></i>
                     <p>React</p>
                 </li>
@@ -152,22 +157,22 @@
         <h4>Portfolio</h4>
         <div class="wrapper">
             <div class="firstProject">
-                <div class="firstLeft">
+                <div class="firstLeft aos-init aos-animate" data-aos="fade-right">
                     <img src="./assets/projectFive.png" alt="Laptop showcasing my project, Trippy Tincture">
                 </div>
-                <div class="firstRight">
+                <div class="firstRight aos-init aos-animate" data-aos="fade-left">
                     <h5>Trippy Tincture</h5>
                     <p>User takes a <em>Trippy Tincture</em> and a story is generated based on user's inputs. Utilized
                         Firebase to retrieve phrases about the sun and moon based on user day-time selections, and the
                         more drops a user selects, the more latin phrases appear. </p>
-                    <ul class="skillsUsed">
+                    <ul class="skillsUsed aos-init aos-animate" data-aos="fade-down">
                         <li>React</li>
                         <li>API</li>
                         <li>Sass</li>
                         <li>Firebase</li>
                         <li>JavaScript</li>
                     </ul>
-                    <div class="projectButtons">
+                    <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
                         <button> <a href="https://reemhamz.github.io/trippyTinctureProjectFive/">View Live</a></button>
                         <button> <a href="https://github.com/reemhamz/trippyTinctureProjectFive">View on
                                 Github</a></button>
@@ -177,47 +182,47 @@
 
 
             <div class="secondProject">
-                <div class="secondLeft">
+                <div class="secondLeft aos-init aos-animate" data-aos="fade-right">
                     <h5>Westerosi Wiki</h5>
                     <p>Westerosi Wiki is a project showcasing overhead information about George RR Martin's world of
                         Westeros, specifically focussing on the nine great houses. User selects a house sigil on the
                         interactive map and is transported to see historical information about chosen house. </p>
-                    <ul class="skillsUsed">
+                    <ul class="skillsUsed aos-init aos-animate" data-aos="fade-down">
                         <li>API</li>
                         <li>Sass</li>
                         <li>jQuery</li>
                         <li>JavaScript</li>
                         <li>Pair Programming</li>
                     </ul>
-                    <div class="projectButtons">
+                    <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
                         <button> <a href="https://agameofdevs.github.io/westerosi-wiki/">View Live</a></button>
                         <button> <a href="https://github.com/agameofdevs/westerosi-wiki">View on
                                 Github</a></button>
                     </div>
                 </div>
-                <div class="secondRight">
+                <div class="secondRight aos-init aos-animate" data-aos="fade-left">
                     <img src="./assets/projectFour.png" alt="Laptop showcasing my project, Westerosi Wiki">
                 </div>
             </div>
 
 
             <div class="thirdProject">
-                <div class="thirdLeft">
+                <div class="thirdLeft aos-init aos-animate" data-aos="fade-right">
                     <img src="./assets/projectThree.png" alt="Laptop showcasing my project, Westerosi Wiki">
                 </div>
-                <div class="thirdRight">
+                <div class="thirdRight aos-init aos-animate" data-aos="fade-left">
                     <h5>Starbucks Seasonal Drinks Generator</h5>
                     <p>Created an experience for users in the sense of them entering a Starbucks café and speaking to a
                         barista. The barista asks them a series of questions in order to reccommend a seasonal drink to
                         the user. </p>
-                    <ul class="skillsUsed">
+                    <ul class="skillsUsed aos-init aos-animate" data-aos="fade-down">
                         <li>Sass</li>
                         <li>jQuery</li>
                         <li>JavaScript</li>
                         <li>Responsive Design</li>
 
                     </ul>
-                    <div class="projectButtons">
+                    <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
                         <button> <a href="https://reemhamz.github.io/reemHamouiprojectThree/">View Live</a></button>
                         <button> <a href="https://github.com/reemhamz/reemHamouiprojectThree">View on
                                 Github</a></button>
@@ -226,13 +231,13 @@
             </div>
 
             <div class="fourthProject">
-                <div class="fourthLeft">
+                <div class="fourthLeft aos-init aos-animate" data-aos="fade-right">
                     <h5>Hue Are You?</h5>
                     <p>Hue Are You utilizes two different APIs (<a href="https://makeup-api.herokuapp.com/">Makeup
                             API</a> and the <a
                                 href="https://www.rijksmuseum.nl/en/api/-rijksmuseum-oai-api-instructions-for-use">Rijks Museum API</a>) as well as Firebase. It asks the user to select a makeup brand, leading to showing a makeup palette. The user then selects a colour from the palette and essentially paints an image with it.
                             </p>
-                    <ul class="skillsUsed">
+                    <ul class="skillsUsed aos-init aos-animate" data-aos="fade-down">
                         <li>API</li>
                         <li>Sass</li>
                         <li>React</li>
@@ -240,32 +245,32 @@
                         <li>JavaScript</li>
                         <li>Mob Programming</li>
                     </ul>
-                    <div class="projectButtons">
+                    <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
                         <button> <a href="https://huearewe.github.io/hueAreYou/">View Live</a></button>
                         <button> <a href="https://github.com/hueAreWe/hueAreYou">View on
                                 Github</a></button>
                     </div>
                 </div>
-                <div class="fourthRight">
+                <div class="fourthRight aos-init aos-animate" data-aos="fade-left">
                     <img src="./assets/projectSix.png" alt="Laptop showcasing my project, Westerosi Wiki">
                 </div>
             </div>
 
             <div class="fifthProject">
-                <div class="fifthLeft">
+                <div class="fifthLeft aos-init aos-animate" data-aos="fade-right">
                     <img src="./assets/projectTwo.png" alt="Laptop showcasing my project, Westerosi Wiki">
                 </div>
-                <div class="fifthRight">
+                <div class="fifthRight aos-init aos-animate" data-aos="fade-left">
                     <h5>The Restaurant Mall</h5>
                     <p>A multipage PSD conversion of a Restaurant site.</p>
-                    <ul class="skillsUsed">
+                    <ul class="skillsUsed aos-init aos-animate" data-aos="fade-down">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Sass</li>
                         <li>Responsive Design</li>
                         <li>Web Accessibility</li>
                     </ul>
-                    <div class="projectButtons">
+                    <div class="projectButtons aos-animate aos-init" data-aos="fade-up">
                         <button> <a href="https://reemhamz.github.io/reem-hamoui-project-two/">View Live</a></button>
                         <button> <a href="https://github.com/reemhamz/reem-hamoui-project-two">View on
                                 Github</a></button>
@@ -296,7 +301,7 @@
             </ul>
         </div>
 
-        <div class="contactForm">
+        <div class="contactForm aos-animate aos-init" data-aos="flip-up">
             
             <form action="http://www.focuspocus.io/magic/me@reemh.dev" method="POST">
                 <legend class="visuallyHidden">Contact Reem</legend>
@@ -332,10 +337,10 @@
         <p>© 2019 Designed and coded by Reem Hamoui</p>
         <p><span>Header illustration by <a href="https://dribbble.com/PatrykW">Patryk Wojciechowicz</a></span></p>
     </footer>
-    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1101,7 +1101,7 @@ header .headerContent {
 header .socialIcons {
   position: fixed;
   right: 2%;
-  top: 2%;
+  top: 30%;
   display: inline-block;
   z-index: 30;
 }
@@ -1112,7 +1112,6 @@ header .socialIcons li {
 
 header .socialIcons li i {
   color: #c06c84;
-  text-shadow: 1px 1px white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1127,19 +1126,39 @@ header .socialIcons li i:hover {
   }
 }
 
+.menuIcon {
+  color: #c06c84;
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  display: inline-block;
+  z-index: 30;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menuIcon:hover {
+  color: lightPink;
+}
+
 .pageNav {
   position: absolute;
-  top: 2%;
+  top: 30%;
+  right: 30%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 30;
 }
 
+.pageNav ul {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+
 .pageNav ul li {
-  display: inline-block;
   margin: 10px;
-  color: #ffff;
+  color: #c06c84;
 }
 
 .arrow {
@@ -1224,5 +1243,8 @@ footer p {
 
 footer span {
   font-size: 1.6rem;
+}
+
+footer span a {
   text-decoration: underline;
 }
