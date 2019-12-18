@@ -39,10 +39,9 @@
                 .careerButtons{
                     margin: 0 auto;
                     text-align: center;
-                    
-
+                    flex-direction: column;
                     button{
-                        // width:80%;
+                        width: 100%;
                     }
                 }
             }
