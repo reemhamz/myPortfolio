@@ -32,7 +32,7 @@ body {
 
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 main{
@@ -54,7 +54,65 @@ main{
     left: 0;
 }
 
+.menuIcon{
+    color: $orangeColor;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    display: inline-block;
+    z-index: 30;
+    transition: 0.5s;
+    background-color: $darkTeal;
+    padding: 7px 10px;
+    border-radius: 100%;
+    &:hover{
+        background-color: #537ec5;
+    }
+}
 
+
+.navParent{
+    position: sticky;
+    z-index: 50;
+    top:0;
+.pageNav{
+    position: relative;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    .exIcon{
+        position: absolute;
+        color: $orangeColor;
+        top: 3%;
+        right: 2%;
+        padding: 7px 10px;
+    }
+
+    ul{
+        background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        z-index: 40;
+        li{
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin: 0 auto;
+            font-weight: 900;
+            a{
+                color: $teal;
+                transition: 0.2s;
+                &:hover{
+                    color: $lightOrange;
+
+                }
+            }
+        }
+    }
+}
+}
 
 
 // Footer styling

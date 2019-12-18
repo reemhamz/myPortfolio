@@ -32,8 +32,8 @@
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         @include mqSmallTablet{
-            flex-direction: column;
         }
     }
 }
@@ -43,15 +43,22 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    width: 60%;
+    margin: 0 auto;
+    @include mqMedPhone{
+                width: 100%;
+            }
+
+
     h5{
         color: $pinkColor
     }
     .socialIcons{
         margin-top: 20px;
-        display: none;
+            display: flex;
+            justify-content: space-evenly;
         
         li{
-            z-index: 30;
             i{
                 color: $orangeColor;
                 transition: 0.5s;
@@ -60,16 +67,12 @@
                 }
             }
         }
-        @include mqMedPhone{
-            display: flex;
-            justify-content: space-evenly;
-        }
     }
 }
 
 .contactForm{
             margin: 30px auto;
-            width: 60%;
+            width: 80%;
             background-color: $blueGreenTeal;
             display: flex;
             flex-direction: column;

@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link
-        href="https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Handlee|Berkshire+Swash|Quicksand:300,400,500,600,700&display=swap"
+        href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Quicksand:300,400,500,600,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" type="image/ico" href="./assets/favicon_io/favicon.ico" />
+    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a6deab4c82.js"></script>
@@ -22,33 +23,35 @@
 </head>
 
 <body>
+    <div class="navParent">
+        
+    <a href="#" class="menuIcon" aria-label="Open hamburger menu to view navigation"><i
+            class="fas fa-bars fa-4x"></i></a>
+
+    <nav class="pageNav aos-animate aos-init" data-aos="fade-in">
+        <a href="#" class="exIcon"><i class="fas fa-times-circle fa-5x"></i></a>
+        <ul class=navList>
+
+            <li class="goToHome"><a href="#home" class="navItem">Home</a></li>
+            <li class="goToAboutMe"><a href="#aboutMe" class="navItem">About me</a></li>
+            <li class="goToSkills"><a href="#skills" class="navItem">Skills</a></li>
+            <li class="goToPortfolio"><a href="#portfolio" class="navItem">Portflio</a></li>
+            <li class="goToContact"><a href="#contact" class="navItem">Contact</a></li>
+        </ul>
+    </nav>
+
+    </div>
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
+    <header id="particles-js" >
 
-    <header id="particles-js" id="home">
-        
-                <a href="#" class="menuIcon" aria-label="Open hamburger menu to view navigation"><i
-                        class="fas fa-bars fa-4x" ></i></a>
-
-        <nav class="pageNav">
-            <a href="#" class="exIcon"><i class="fas fa-times-circle fa-5x"></i></a>
-            <ul class=navList>
-                <li><a href="#home" class="navItem">Home</a></li>
-                <li><a href="#aboutMe" class="navItem">About me</a></li>
-                <li><a href="#skills" class="navItem">Skills</a></li>
-                <li><a href="#portfolio" class="navItem">Portflio</a></li>
-                <li><a href="#contact" class="navItem">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="wrapper headerContent">
+        <div class="wrapper headerContent" id="home">
 
             <h1>Hi, I'm <span>Reem</span></h1>
             <h2>a web developer</h2>
 
         </div>
-
         
-
         <div class="arrow">
             <a href="#aboutMe" aria-label="Scroll to main section" tabindex="0">
 
@@ -60,24 +63,7 @@
 
     </header>
 
-    <main id="mainContent">
-        
-        <ul class="socialIcons topIcons">
-            <li><a href="https://twitter.com/reemcodes" target="_blank" rel="noopener"
-                    aria-label="Go to Reem's Twitter"><i
-                        class="fab fa-twitter fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/reemhamz" target="_blank" rel="noopener" aria-label="Go to Reem's Github"><i
-                        class="fab fa-github fa-4x"
-                        aria-hidden="true"></i></a></li>
-            <li><a href="https://dev.to/reemhamz" target="_blank" rel="noopener"
-                    aria-label="Go to Reem's Dev Community Page"><i
-                        class="fab fa-dev fa-4x" target="_blank" rel="noopener" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/reemhamoui/" target="_blank" rel="noopener"
-                    aria-label="Go to Reem's LinkedIn"><i
-                        class="fab fa-linkedin fa-4x" aria-hidden="
-                        true"></i></a></li>
-        </ul>
-        
+    <main id="mainContent">        
         
     
     <section class="aboutMe" id="aboutMe">
@@ -317,16 +303,16 @@
             <ul class="socialIcons bottomIcons">
                 <li><a href="https://twitter.com/reemcodes" target="_blank" rel="noopener"
                         aria-label="Go to Reem's Twitter"><i
-                            class="fab fa-twitter fa-4x" target="_blank" rel="noopener" aria-hidden="true"></i></a></li>
+                            class="fab fa-twitter fa-5x" target="_blank" rel="noopener" aria-hidden="true"></i></a></li>
                 <li><a href="https://github.com/reemhamz" target="_blank" rel="noopener"
                         aria-label="Go to Reem's Github"><i
-                            class="fab fa-github fa-4x" aria-hidden="true"></i></a></li>
+                            class="fab fa-github fa-5x" aria-hidden="true"></i></a></li>
                 <li><a href="https://dev.to/reemhamz" target="_blank" rel="noopener"
                         aria-label="Go to Reem's Dev Community Page"><i
-                            class="fab fa-dev fa-4x" aria-hidden="true"></i></a></li>
+                            class="fab fa-dev fa-5x" aria-hidden="true"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/reemhamoui/" target="_blank" rel="noopener"
                         aria-label="Go to Reem's LinkedIn"><i
-                            class="fab fa-linkedin fa-4x" aria-hidden="
+                            class="fab fa-linkedin fa-5x" aria-hidden="
                         true"></i></a></li>
             </ul>
         </div>
