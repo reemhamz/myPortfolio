@@ -74,7 +74,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
             .inputRow{
                 display: flex;
                 justify-content: space-between;
@@ -89,10 +88,9 @@
                         }
             }
             form{
-                border: 2px dashed #282c37;
                 padding: 25px;
                 display: inline-block;
-                textarea{
+                textarea, input{
                     resize: none;
                 }
             }

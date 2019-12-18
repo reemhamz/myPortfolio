@@ -293,11 +293,14 @@ h5 {
   font-size: 3rem;
   font-weight: normal;
   color: #00a79d;
+  letter-spacing: 5px;
 }
 
 @media (max-width: 565px) {
   h5 {
     font-size: 2.2rem;
+    letter-spacing: none;
+    margin-top: 20px;
   }
 }
 
@@ -322,14 +325,15 @@ button {
   color: #ffff;
   border: none;
   padding: 10px;
+  -webkit-box-shadow: 0px 0px 10px transparent;
+          box-shadow: 0px 0px 10px transparent;
 }
 
 button:hover {
   background-color: #fb432a;
   font-size: 2.2rem;
-  -webkit-box-shadow: 5px 5px 5px black;
-          box-shadow: 5px 5px 5px black;
-  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 ul {
@@ -358,6 +362,12 @@ ul {
   display: inline-block;
 }
 
+@media (max-width: 565px) {
+  .skillsUsed {
+    margin-top: 10px;
+  }
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -375,6 +385,7 @@ input, textarea {
   background-repeat: repeat;
   background-position: center center;
   padding: 80px 0;
+  position: relative;
 }
 
 .aboutMe .wrapper {
@@ -411,12 +422,14 @@ input, textarea {
 
 .aboutMe .aboutMeLeft p span {
   color: #00a79d;
-  font-weight: 800;
 }
 
 .aboutMe .aboutMeLeft button {
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
+  padding: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 930px) {
@@ -508,9 +521,8 @@ input, textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 20px;
 }
 
@@ -524,16 +536,16 @@ input, textarea {
           flex-direction: column;
   margin: 5px;
   padding: 10px;
-  color: #00adb5;
+  color: #524771;
   text-align: center;
 }
 
 .skillsIconsOne {
-  border-top: 2px solid #ffff;
+  border-top: 2px solid #00adb5;
 }
 
 .skillsIconsTwo {
-  border-bottom: 2px solid #ffff;
+  border-bottom: 2px solid #00adb5;
 }
 
 .projects {
@@ -645,7 +657,7 @@ input, textarea {
 }
 
 .secondProject {
-  margin-top: 80px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,7 +710,7 @@ input, textarea {
 }
 
 .thirdProject {
-  margin-top: 80px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,7 +763,7 @@ input, textarea {
 }
 
 .fourthProject {
-  margin-top: 80px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,7 +820,7 @@ input, textarea {
 }
 
 .fifthProject {
-  margin-top: 80px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1008,12 +1020,11 @@ input, textarea {
 }
 
 .contactForm form {
-  border: 2px dashed #282c37;
   padding: 25px;
   display: inline-block;
 }
 
-.contactForm form textarea {
+.contactForm form textarea, .contactForm form input {
   resize: none;
 }
 
@@ -1067,6 +1078,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  position: relative;
+}
+
 header {
   background-image: url(../assets/deerSun.jpg);
   background-position: center center;
@@ -1103,34 +1118,6 @@ header .headerContent {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-}
-
-header .socialIcons {
-  position: fixed;
-  right: 2%;
-  top: 30%;
-  display: inline-block;
-  z-index: 30;
-}
-
-header .socialIcons li {
-  margin: 10px 0;
-}
-
-header .socialIcons li i {
-  color: #FC6F5C;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-header .socialIcons li i:hover {
-  color: #ff9776;
-}
-
-@media (max-width: 565px) {
-  header .socialIcons {
-    display: none;
-  }
 }
 
 .menuIcon {
@@ -1172,21 +1159,35 @@ header .socialIcons li i:hover {
 }
 
 .pageNav ul {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8)));
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9)));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .pageNav ul li {
-  margin: 60px 0;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 900;
 }
 
 .pageNav ul li a {
-  color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  color: #00a79d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.pageNav ul li a:hover {
+  color: #ff9776;
 }
 
 .arrow {
@@ -1205,8 +1206,8 @@ header .socialIcons li i:hover {
   display: block;
   width: 25px;
   height: 25px;
-  border-bottom: 5px solid #ffff;
-  border-right: 5px solid #ffff;
+  border-bottom: 5px solid #524771;
+  border-right: 5px solid #524771;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   margin: -10px;
@@ -1258,6 +1259,35 @@ header .socialIcons li i:hover {
 
 .particles-js-canvas-el {
   position: absolute;
+}
+
+.topIcons {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 2%;
+  top: 2%;
+  display: inline-block;
+  z-index: 30;
+}
+
+.topIcons li {
+  margin: 10px 0;
+}
+
+.topIcons li i {
+  color: #FC6F5C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.topIcons li i:hover {
+  color: #ff9776;
+}
+
+@media (max-width: 565px) {
+  .topIcons {
+    display: none;
+  }
 }
 
 footer {

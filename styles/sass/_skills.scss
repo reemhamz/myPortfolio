@@ -28,7 +28,7 @@
         .skillsIconsOne, .skillsIconsTwo{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             margin-top: 20px;
             
             li{
@@ -36,22 +36,16 @@
                 flex-direction: column;
                 margin: 5px;
                 padding: 10px;
-                color: $blueGreenTeal;
+                color: $darkTeal;
                 text-align: center;
             }
         }
     }
 
 .skillsIconsOne{
-    border-top: 2px solid $whiteColor;
-    li{
-        // color: $teal;
-    }
+    border-top: 2px solid $blueGreenTeal;
 }
 
 .skillsIconsTwo{
-    border-bottom: 2px solid $whiteColor;
-    li{
-        // color: $lightOrange;
-    }
+    border-bottom: 2px solid $blueGreenTeal;
 }

@@ -34,6 +34,10 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    position: relative;
+}
+
 header {
     background-image: url(../assets/deerSun.jpg);
     background-position: center center;
@@ -55,27 +59,7 @@ header {
         justify-content: space-between;
         position: relative;
     }
-    .socialIcons{
-        position: fixed;
-        right: 2%;
-        top: 30%;
-        display: inline-block;
-        z-index: 30;
-        
-        li{
-            margin: 10px 0;
-            i{
-                color: $orangeColor;
-                transition: 0.5s;
-                &:hover{
-                    color: $lightOrange;
-                }
-            }
-        }
-        @include mqMedPhone{
-            display: none;
-        }
-    }
+    
 }
 
 .menuIcon{
@@ -110,15 +94,22 @@ header {
         right: 2%;
     }
     ul{
-        background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
+        background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         li{
-            margin: 60px 0;
             font-size: 3.5rem;
             text-transform: uppercase;
             font-weight: 900;
             a{
-                color: black;
-                transition: 0.5s;
+                color: $teal;
+                transition: 0.2s;
+                &:hover{
+                    color: $lightOrange;
+
+                }
             }
         }
     }
@@ -135,13 +126,14 @@ header {
     transform: translate(-50%,-50%);
     align-self: flex-end;
     z-index: 10;
+    
 }
 .arrow span{
     display: block;
     width: 25px;
     height: 25px;
-    border-bottom: 5px solid $whiteColor;
-    border-right: 5px solid $whiteColor; 
+    border-bottom: 5px solid $darkTeal;
+    border-right: 5px solid $darkTeal; 
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
@@ -169,6 +161,29 @@ header {
 .particles-js-canvas-el{
     position: absolute;
 }
+
+
+.topIcons{
+        position: sticky;
+        right: 2%;
+        top: 2%;
+        display: inline-block;
+        z-index: 30;
+        li{
+            margin: 10px 0;
+            i{
+                color: $orangeColor;
+                transition: 0.5s;
+                &:hover{
+                    color: $lightOrange;
+                }
+            }
+        }
+        @include mqMedPhone{
+            display: none;
+        }
+    }
+
 
 
 // Footer styling

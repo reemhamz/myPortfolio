@@ -12,12 +12,18 @@ $(document).ready(function () {
     $('.pageNav').hide();
 
     $('.menuIcon').on('click', function () {
-        $('.pageNav').show();
-        $('.menuIcon').hide();
+        
+        $('.pageNav').show(300, function () {
+            //animation complete
+        });
+        $('.menuIcon').hide(); 
+        
     });
 
     $('.exIcon').on('click', function () {
-        $('.pageNav').hide();
+        $('.pageNav').hide(500, function () {
+            
+        });
         $('.menuIcon').show();
     })
 
@@ -26,11 +32,7 @@ $(document).ready(function () {
         $('.menuIcon').show();
     })
 
-    AOS.init(
-        {
-            duration: 800
-        }
-    );
+    
 });
 
 
