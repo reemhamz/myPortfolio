@@ -8,10 +8,9 @@
 $(document).ready(function () {
     // e.preventDefault;
     AOS.init({
-
         once: true,
-
     });
+
 
 
     $('.pageNav').hide();
@@ -63,5 +62,11 @@ $(document).ready(function () {
             scrollTop: $('#contact').offset().top
         })
     });
+
+    $('.hireMe').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#contact').offset().top
+        })
+    })
 
 });
