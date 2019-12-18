@@ -804,6 +804,16 @@ header .headerContent {
   text-align: right;
 }
 
+.secondProject .secondLeft p a {
+  color: #FC6F5C;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.secondProject .secondLeft p a:hover {
+  color: #00a79d;
+}
+
 .secondProject .skillsUsed, .secondProject .projectButtons {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -896,6 +906,12 @@ header .headerContent {
 
 .fourthProject p a {
   color: #FC6F5C;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fourthProject p a:hover {
+  color: #00a79d;
 }
 
 .fourthProject .fourthRight {

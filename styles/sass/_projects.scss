@@ -78,6 +78,7 @@
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    
     .secondRight{
         width: 40%;
         align-self: center;
@@ -88,6 +89,15 @@
     .secondLeft{
         width: 50%;
         text-align: right;
+        p{
+            a{
+                color: $orangeColor;
+                transition: 0.3s;
+                &:hover{
+                    color: $teal;
+                }
+            }
+        }
     }
     .skillsUsed, .projectButtons{
         justify-content: flex-end;
@@ -149,6 +159,10 @@
         p{
             a{
                 color: $orangeColor;
+                transition: 0.3s;
+                &:hover{
+                    color: $teal;
+                }
             }
         }
     .fourthRight{
