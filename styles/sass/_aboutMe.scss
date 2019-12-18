@@ -22,21 +22,27 @@
                 color: $teal;
             }
         }
-        button{
-            width: 100%;
-            margin-top: 20px;
-            padding: 10px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
+        .careerButtons{
+            display: flex;
+            justify-content: space-between;
+            button{
+                width: 45%;
+                margin-top: 20px;
+                padding: 10px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
         }
         @include mqTablet{
             width: 100%;
             text-align: center;
-                .button{
+                .careerButtons{
                     margin: 0 auto;
                     text-align: center;
+                    
+
                     button{
-                        width:80%;
+                        // width:80%;
                     }
                 }
             }

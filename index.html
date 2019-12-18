@@ -22,10 +22,14 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
+
+
     <header id="particles-js" id="home">
 
-        <div class="burgerMenu">
-            <a href="#/" class="menuIcon"><i class="fas fa-bars fa-5x"></i></a>
+        <div class="burgerMenu" tabindex="0">
+            <a href="#" class="menuIcon" aria-label="Open hamburger menu to view navigation"><i
+                    class="fas fa-bars fa-5x" ></i></a>
         </div>
 
         <nav class="pageNav">
@@ -48,7 +52,7 @@
         
 
         <div class="arrow">
-            <a href="#aboutMe">
+            <a href="#aboutMe" aria-label="Scroll to main section" tabindex="0">
 
                 <span></span>
                 <span></span>
@@ -58,18 +62,20 @@
 
     </header>
 
-    <main id="main">
-        
-        >
+    <main id="mainContent">
         
         <ul class="socialIcons topIcons">
-            <li><a href="https://twitter.com/reemcodes" aria-label="Go to Reem's Twitter"><i
+            <li><a href="https://twitter.com/reemcodes" target="_blank" rel="noopener"
+                    aria-label="Go to Reem's Twitter"><i
                         class="fab fa-twitter fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/reemhamz" aria-label="Go to Reem's Github"><i class="fab fa-github fa-4x"
+            <li><a href="https://github.com/reemhamz" target="_blank" rel="noopener" aria-label="Go to Reem's Github"><i
+                        class="fab fa-github fa-4x"
                         aria-hidden="true"></i></a></li>
-            <li><a href="https://dev.to/reemhamz" aria-label="Go to Reem's Dev Community Page"><i
-                        class="fab fa-dev fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/reemhamoui/" aria-label="Go to Reem's LinkedIn"><i
+            <li><a href="https://dev.to/reemhamz" target="_blank" rel="noopener"
+                    aria-label="Go to Reem's Dev Community Page"><i
+                        class="fab fa-dev fa-4x" target="_blank" rel="noopener" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/reemhamoui/" target="_blank" rel="noopener"
+                    aria-label="Go to Reem's LinkedIn"><i
                         class="fab fa-linkedin fa-4x" aria-hidden="
                         true"></i></a></li>
         </ul>
@@ -95,9 +101,13 @@
                 <p>
                     <span>Did you know Reem means deer 🦌 in my native tongue?</span>
                 </p>
-                <div class="button">
+                <div class="careerButtons">
                     <button>
-                        Resumé
+                        <a href="https://drive.google.com/open?id=1Bcwo4kdfAPHDy85x_EqxVi-QwuKoFXZ8" target="_blank" rel="noopener">Resumé</a>
+                    </button>
+
+                    <button>
+                        <a href="#contact">Hire me</a>
                     </button>
                 </div>
             </div>
@@ -179,8 +189,9 @@
                         <li>JavaScript</li>
                     </ul>
                     <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
-                        <button> <a href="https://reemhamz.github.io/trippyTinctureProjectFive/">View Live</a></button>
-                        <button> <a href="https://github.com/reemhamz/trippyTinctureProjectFive">View on
+                        <button> <a href="https://reemhamz.github.io/trippyTinctureProjectFive/" target="_blank" rel="noopener">View Live</a></button>
+                        <button> <a href="https://github.com/reemhamz/trippyTinctureProjectFive" target="_blank"
+                                rel="noopener">View on
                                 Github</a></button>
                     </div>
                 </div>
@@ -201,8 +212,10 @@
                         <li>Pair Programming</li>
                     </ul>
                     <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
-                        <button> <a href="https://agameofdevs.github.io/westerosi-wiki/">View Live</a></button>
-                        <button> <a href="https://github.com/agameofdevs/westerosi-wiki">View on
+                        <button> <a href="https://agameofdevs.github.io/westerosi-wiki/" target="_blank"
+                                rel="noopener">View Live</a></button>
+                        <button> <a href="https://github.com/agameofdevs/westerosi-wiki" target="_blank"
+                                rel="noopener">View on
                                 Github</a></button>
                     </div>
                 </div>
@@ -229,8 +242,10 @@
 
                     </ul>
                     <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
-                        <button> <a href="https://reemhamz.github.io/reemHamouiprojectThree/">View Live</a></button>
-                        <button> <a href="https://github.com/reemhamz/reemHamouiprojectThree">View on
+                        <button> <a href="https://reemhamz.github.io/reemHamouiprojectThree/" target="_blank"
+                                rel="noopener">View Live</a></button>
+                        <button> <a href="https://github.com/reemhamz/reemHamouiprojectThree" target="_blank"
+                                rel="noopener">View on
                                 Github</a></button>
                     </div>
                 </div>
@@ -239,9 +254,13 @@
             <div class="fourthProject">
                 <div class="fourthLeft aos-init aos-animate" data-aos="fade-right">
                     <h5>Hue Are You?</h5>
-                    <p>Hue Are You utilizes two different APIs (<a href="https://makeup-api.herokuapp.com/">Makeup
+                    <p>Hue Are You utilizes two different APIs (<a href="https://makeup-api.herokuapp.com/"
+                            target="_blank" rel="noopener">Makeup
                             API</a> and the <a
-                                href="https://www.rijksmuseum.nl/en/api/-rijksmuseum-oai-api-instructions-for-use">Rijks Museum API</a>) as well as Firebase. It asks the user to select a makeup brand, leading to showing a makeup palette. The user then selects a colour from the palette and essentially paints an image with it.
+                                href="https://www.rijksmuseum.nl/en/api/-rijksmuseum-oai-api-instructions-for-use"
+                                target="_blank" rel="noopener">Rijks Museum API</a>) as well as Firebase. It asks the
+                                user to select a makeup brand, leading to showing a makeup palette. The user then
+                                selects a colour from the palette and essentially paints an image with it.
                             </p>
                     <ul class="skillsUsed aos-init aos-animate" data-aos="fade-down">
                         <li>API</li>
@@ -252,8 +271,9 @@
                         <li>Mob Programming</li>
                     </ul>
                     <div class="projectButtons aos-init aos-animate" data-aos="fade-up">
-                        <button> <a href="https://huearewe.github.io/hueAreYou/">View Live</a></button>
-                        <button> <a href="https://github.com/hueAreWe/hueAreYou">View on
+                        <button> <a href="https://huearewe.github.io/hueAreYou/" target="_blank" rel="noopener">View
+                                Live</a></button>
+                        <button> <a href="https://github.com/hueAreWe/hueAreYou" target="_blank" rel="noopener">View on
                                 Github</a></button>
                     </div>
                 </div>
@@ -277,8 +297,10 @@
                         <li>Web Accessibility</li>
                     </ul>
                     <div class="projectButtons aos-animate aos-init" data-aos="fade-up">
-                        <button> <a href="https://reemhamz.github.io/reem-hamoui-project-two/">View Live</a></button>
-                        <button> <a href="https://github.com/reemhamz/reem-hamoui-project-two">View on
+                        <button> <a href="https://reemhamz.github.io/reem-hamoui-project-two/" target="_blank"
+                                rel="noopener">View Live</a></button>
+                        <button> <a href="https://github.com/reemhamz/reem-hamoui-project-two" target="_blank"
+                                rel="noopener">View on
                                 Github</a></button>
                     </div>
                 </div>
@@ -295,13 +317,17 @@
         <div class="socials">
 
             <ul class="socialIcons bottomIcons">
-                <li><a href="https://twitter.com/reemcodes" aria-label="Go to Reem's Twitter"><i
-                            class="fab fa-twitter fa-4x" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/reemhamz" aria-label="Go to Reem's Github"><i
+                <li><a href="https://twitter.com/reemcodes" target="_blank" rel="noopener"
+                        aria-label="Go to Reem's Twitter"><i
+                            class="fab fa-twitter fa-4x" target="_blank" rel="noopener" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/reemhamz" target="_blank" rel="noopener"
+                        aria-label="Go to Reem's Github"><i
                             class="fab fa-github fa-4x" aria-hidden="true"></i></a></li>
-                <li><a href="https://dev.to/reemhamz" aria-label="Go to Reem's Dev Community Page"><i
+                <li><a href="https://dev.to/reemhamz" target="_blank" rel="noopener"
+                        aria-label="Go to Reem's Dev Community Page"><i
                             class="fab fa-dev fa-4x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/reemhamoui/" aria-label="Go to Reem's LinkedIn"><i
+                <li><a href="https://www.linkedin.com/in/reemhamoui/" target="_blank" rel="noopener"
+                        aria-label="Go to Reem's LinkedIn"><i
                             class="fab fa-linkedin fa-4x" aria-hidden="
                         true"></i></a></li>
             </ul>
@@ -342,7 +368,8 @@
     <footer>
         <p>© 2019 Coded by Reem Hamoui</p>
         <p><span>Header illustration by <a
-                    href="https://www.reddit.com/r/Firewatch/comments/4efmmo/a_great_wallpaper/">some
+                    href="https://www.reddit.com/r/Firewatch/comments/4efmmo/a_great_wallpaper/" target="_blank"
+                    rel="noopener">some
                     redditor</a></span></p>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

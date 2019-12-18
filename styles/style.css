@@ -424,8 +424,17 @@ input, textarea {
   color: #00a79d;
 }
 
-.aboutMe .aboutMeLeft button {
-  width: 100%;
+.aboutMe .aboutMeLeft .careerButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutMe .aboutMeLeft .careerButtons button {
+  width: 45%;
   margin-top: 20px;
   padding: 10px;
   letter-spacing: 5px;
@@ -437,12 +446,9 @@ input, textarea {
     width: 100%;
     text-align: center;
   }
-  .aboutMe .aboutMeLeft .button {
+  .aboutMe .aboutMeLeft .careerButtons {
     margin: 0 auto;
     text-align: center;
-  }
-  .aboutMe .aboutMeLeft .button button {
-    width: 80%;
   }
 }
 
@@ -1082,6 +1088,20 @@ main {
   position: relative;
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+  font-size: 2.2rem;
+}
+
+.skipLink:focus {
+  left: 0;
+}
+
 header {
   background-image: url(../assets/deerSun.jpg);
   background-position: center center;
@@ -1141,12 +1161,8 @@ header .headerContent {
   right: 0;
   bottom: 0;
   left: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   z-index: 30;
   max-height: 100vh;
-  display: none;
 }
 
 .pageNav .exIcon {
