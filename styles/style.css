@@ -1222,6 +1222,7 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -1271,6 +1272,7 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
+  display: none;
 }
 
 .navParent .pageNav .exIcon {

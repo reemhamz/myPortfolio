@@ -21,9 +21,6 @@ header {
     }
 }
 
-
-
-
 // Arrow styling
 .arrow{
     cursor: pointer;
@@ -68,25 +65,3 @@ header {
 .particles-js-canvas-el{
     position: absolute;
 }
-
-
-// .topIcons{
-//         position: sticky;
-//         right: 2%;
-//         top: 2%;
-//         display: inline-block;
-//         z-index: 30;
-//         li{
-//             margin: 10px 0;
-//             i{
-//                 color: $orangeColor;
-//                 transition: 0.5s;
-//                 &:hover{
-//                     color: $lightOrange;
-//                 }
-//             }
-//         }
-//         @include mqMedPhone{
-//             display: none;
-//         }
-//     }

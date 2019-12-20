@@ -8,10 +8,8 @@
 $(document).ready(function () {
     // e.preventDefault;
     AOS.init({
-        once: true,
+        once: false,
     });
-
-
 
     $('.pageNav').hide();
 
