@@ -7,9 +7,6 @@
 
 $(document).ready(function () {
     // e.preventDefault;
-    AOS.init({
-        once: false,
-    });
 
     $('.pageNav').hide();
 

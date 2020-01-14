@@ -1255,6 +1255,12 @@ main {
   background-color: #524771;
   padding: 7px 10px;
   border-radius: 100%;
+  font-size: 4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding-top: 1px;
+  padding-bottom: 4px;
+  font-weight: bold;
 }
 
 .menuIcon:hover {
@@ -1277,10 +1283,15 @@ main {
 
 .navParent .pageNav .exIcon {
   position: absolute;
-  color: #FC6F5C;
+  background-color: #FC6F5C;
+  color: #ffffff;
   top: 3%;
   right: 2%;
   padding: 7px 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius: 100%;
 }
 
 .navParent .pageNav ul {
@@ -1320,6 +1331,7 @@ main {
 footer {
   background-color: #FC6F5C;
   text-align: center;
+  padding: 4px;
 }
 
 footer p {
