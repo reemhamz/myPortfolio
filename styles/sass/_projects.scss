@@ -227,3 +227,46 @@
     }
     }
 }
+
+.sixthProject{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+        p{
+            a{
+                color: $orangeColor;
+                transition: 0.3s;
+                &:hover{
+                    color: $teal;
+                }
+            }
+        }
+    .sixthRight{
+        width: 40%;
+        align-self: center;
+        img{
+            width: 100%;
+        }
+    }
+    .sixthLeft{
+        width: 50%;
+        text-align: right;
+    }
+    .skillsUsed, .projectButtons{
+        justify-content: flex-end;
+    }
+    @include mqTinyTablet{
+        flex-direction: column-reverse;
+        
+        .sixthRight{
+            width: 100%;
+        }
+        .sixthLeft{
+            width: 100%;
+            text-align: center;
+        }
+        .skillsUsed, .projectButtons{
+        justify-content: center;
+    }
+    }
+}

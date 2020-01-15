@@ -319,21 +319,30 @@ p {
 }
 
 button {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  display: inline-block;
   background-color: #FC6F5C;
-  color: #ffff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #fff;
+  -webkit-box-shadow: 5px 5px 0 #347474;
+  box-shadow: 5px 5px 0 #347474;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   border: none;
-  padding: 10px;
-  -webkit-box-shadow: 0px 0px 10px transparent;
-          box-shadow: 0px 0px 10px transparent;
 }
 
 button:hover {
-  background-color: #fb432a;
-  font-size: 2.2rem;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  background-color: #00adb5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
 }
 
 ul {
@@ -1020,6 +1029,69 @@ header .headerContent {
     text-align: center;
   }
   .fifthProject .skillsUsed, .fifthProject .projectButtons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.sixthProject {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sixthProject p a {
+  color: #FC6F5C;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sixthProject p a:hover {
+  color: #00a79d;
+}
+
+.sixthProject .sixthRight {
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.sixthProject .sixthRight img {
+  width: 100%;
+}
+
+.sixthProject .sixthLeft {
+  width: 50%;
+  text-align: right;
+}
+
+.sixthProject .skillsUsed, .sixthProject .projectButtons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 740px) {
+  .sixthProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sixthProject .sixthRight {
+    width: 100%;
+  }
+  .sixthProject .sixthLeft {
+    width: 100%;
+    text-align: center;
+  }
+  .sixthProject .skillsUsed, .sixthProject .projectButtons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
