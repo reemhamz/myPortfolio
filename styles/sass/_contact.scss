@@ -73,13 +73,16 @@
 .contactForm{
             margin: 30px auto;
             width: 80%;
-            background-color: $blueGreenTeal;
+            background-color: $darkTeal;
+            border-radius: 10px;
+            border: 3px solid $orangeColor;
             display: flex;
             flex-direction: column;
             justify-content: center;
             .inputRow{
                 display: flex;
                 justify-content: space-between;
+                
                         .emailInput, .nameInput{
                             width:49%;
                             @include mqMedPhone{
@@ -95,10 +98,15 @@
                 display: inline-block;
                 textarea, input{
                     resize: none;
+                    border-radius: 10px;
+                    &:focus{
+                        border: 4px dotted $teal;
+                    }
                 }
             }
             button{
-                background-color: $darkTeal;
+                
+                color: white;
             }
             @include mqSmallTablet{
                 justify-content: center;

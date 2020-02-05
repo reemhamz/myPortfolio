@@ -314,20 +314,14 @@ p, button, .skillsUsed li, .pageNav li, input, textarea {
   }
 }
 
-p {
-  color: #696464;
-}
-
 button {
   display: inline-block;
   background-color: #FC6F5C;
+  font-size: 2.2rem;
   padding: 10px 20px;
   margin-right: 10px;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  color: #fff;
-  -webkit-box-shadow: 5px 5px 0 #347474;
-  box-shadow: 5px 5px 0 #347474;
+  -webkit-box-shadow: 5px 5px 0 #51dacf;
+          box-shadow: 5px 5px 0 #51dacf;
   position: relative;
   top: 0;
   left: 0;
@@ -338,7 +332,6 @@ button {
 
 button:hover {
   color: #fff;
-  background-color: #00adb5;
   -webkit-box-shadow: none;
   box-shadow: none;
   top: 5px;
@@ -538,9 +531,6 @@ header .headerContent {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media (max-width: 930px) {
@@ -594,13 +584,20 @@ header .headerContent {
 }
 
 .aboutMe .aboutMeRight {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 50%;
-  border-radius: 2px 20px;
+  margin: 0 auto;
   position: relative;
   cursor: default;
+}
+
+.aboutMe .aboutMeRight img {
+  border-radius: 87% 13% 40% 60% / 34% 77% 23% 66%;
+  height: 500px;
+}
+
+@media (max-width: 930px) {
+  .aboutMe .aboutMeRight img {
+    height: auto;
+  }
 }
 
 .aboutMe .aboutMeRight .meMustache {
@@ -612,13 +609,17 @@ header .headerContent {
 }
 
 .aboutMe .aboutMeRight:hover .meMustache {
+  -webkit-transition: 1s;
+  transition: 1s;
   display: block;
+  border-radius: 76% 24% 56% 44% / 34% 54% 46% 66%;
 }
 
 @media (max-width: 670px) {
   .aboutMe .aboutMeRight {
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
+    height: auto;
   }
 }
 
@@ -1197,7 +1198,9 @@ header .headerContent {
 .contactForm {
   margin: 30px auto;
   width: 80%;
-  background-color: #00adb5;
+  background-color: #524771;
+  border-radius: 10px;
+  border: 3px solid #FC6F5C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1245,10 +1248,15 @@ header .headerContent {
 
 .contactForm form textarea, .contactForm form input {
   resize: none;
+  border-radius: 10px;
+}
+
+.contactForm form textarea:focus, .contactForm form input:focus {
+  border: 4px dotted #00a79d;
 }
 
 .contactForm button {
-  background-color: #524771;
+  color: white;
 }
 
 @media (max-width: 870px) {

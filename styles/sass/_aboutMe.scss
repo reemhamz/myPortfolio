@@ -1,88 +1,96 @@
-.aboutMe{
-    background-image: url(../assets/whiteBackground.png);
-    background-repeat: repeat;
-    background-position: center center;
-    padding: 80px 0;
-    position: relative;
-    .wrapper{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        @include mqTablet{
-        flex-direction: column-reverse;
+.aboutMe {
+  background-image: url(../assets/whiteBackground.png);
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 80px 0;
+  position: relative;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include mqTablet {
+      flex-direction: column-reverse;
     }
+  }
+  .aboutMeLeft {
+    width: 45%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    // align-items: center;
+    @include mqTablet {
+      display: block;
     }
-    .aboutMeLeft{
+    p {
+      text-align: left;
+      margin-top: 20px;
+      span {
+        color: $teal;
+      }
+    }
+    .careerButtons {
+      display: flex;
+      justify-content: space-between;
+      button {
         width: 45%;
-        text-align: left;
-        display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+    }
+    @include mqTablet {
+      width: 100%;
+      text-align: center;
+      .careerButtons {
+        margin: 0 auto;
+        text-align: center;
         flex-direction: column;
-        justify-content: space-between;
-        @include mqTablet{
-            display: block;
+        button {
+          width: 100%;
         }
-        p{
-            text-align: left;
-            margin-top: 20px;
-            span{
-                color: $teal;
-            }
-        }
-        .careerButtons{
-            display: flex;
-            justify-content: space-between;
-            button{
-                width: 45%;
-                margin-top: 20px;
-                padding: 10px;
-                letter-spacing: 5px;
-                text-transform: uppercase;
-            }
-        }
-        @include mqTablet{
-            width: 100%;
-            text-align: center;
-                .careerButtons{
-                    margin: 0 auto;
-                    text-align: center;
-                    flex-direction: column;
-                    button{
-                        width: 100%;
-                    }
-                }
-            }
+      }
     }
+  }
 
+  .aboutMeRight {
+    margin: 0 auto;
 
-    .aboutMeRight{
-        align-self: center;
-        width: 50%;
-        border-radius: 2px 20px;
-        position: relative;
-        cursor: default;
-        .meMustache{
-            display: none;
-        }
-        &:hover{
-            .meAntlers{
-                display: none;
-            }
-            .meMustache{
-                display: block;
-            }
-        }
-        @include mqBigPhone{
-            width: 80%;
-            margin-bottom: 20px;
-        }
+    position: relative;
+    cursor: default;
+    img {
+      border-radius: 87% 13% 40% 60% / 34% 77% 23% 66%;
+      height: 500px;
+      @include mqTablet {
+        height: auto;
+      }
     }
-    
+    .meMustache {
+      display: none;
+    }
+    &:hover {
+      .meAntlers {
+        display: none;
+      }
+      .meMustache {
+        transition: 1s;
+        display: block;
+        border-radius: 76% 24% 56% 44% / 34% 54% 46% 66%;
+      }
+    }
+    @include mqBigPhone {
+      width: 100%;
+      margin-bottom: 20px;
+      height: auto;
+    }
+  }
 }
 
-.aboutMe.wrapper{
-    padding: 20px;
-    border-radius: 30px;
-    @include mqTablet{
-        width: 90%;
-    }
+.aboutMe.wrapper {
+  padding: 20px;
+  border-radius: 30px;
+  @include mqTablet {
+    width: 90%;
+  }
 }
