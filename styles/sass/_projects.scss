@@ -41,17 +41,18 @@
     }
 }
 
-.firstProject{
+.imageFirstProject{
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    .firstLeft{
+    .imageLeft{
         align-self: center;
         width: 40%;
         img{
             width: 100%;
         }
     }
-    .firstRight{
+    .textRight{
         width: 50%;
         text-align: left;
     }
@@ -60,10 +61,10 @@
     }
     @include mqTinyTablet{
         flex-direction: column;
-        .firstLeft{
+        .imageLeft{
             width: 100%;
         }
-        .firstRight{
+        .textRight{
             width: 100%;
             text-align: center;
         }
@@ -74,19 +75,19 @@
     
 }
 
-.secondProject{
+.textFirstProject{
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
     
-    .secondRight{
+    .imageRight{
         width: 40%;
         align-self: center;
         img{
             width: 100%;
         }
     }
-    .secondLeft{
+    .textLeft{
         width: 50%;
         text-align: right;
         p{
@@ -105,10 +106,10 @@
     @include mqTinyTablet{
         flex-direction: column-reverse;
         
-        .secondRight{
+        .imageRight{
             width: 100%;
         }
-        .secondLeft{
+        .textLeft{
             width: 100%;
             text-align: center;
         }
@@ -117,156 +118,4 @@
     }
     }
     
-}
-
-.thirdProject{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    .thirdLeft{
-        align-self: center;
-        width: 40%;
-        img{
-            width: 100%;
-        }
-    }
-    .thirdRight{
-        width: 50%;
-        text-align: left;
-    }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-start;
-    }
-    @include mqTinyTablet{
-        flex-direction: column;
-        .thirdLeft{
-            width: 100%;
-        }
-        .thirdRight{
-            width: 100%;
-            text-align: center;
-        }
-        .skillsUsed, .projectButtons{
-        justify-content: center;
-    }
-    }
-}
-
-.fourthProject{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-        p{
-            a{
-                color: $orangeColor;
-                transition: 0.3s;
-                &:hover{
-                    color: $teal;
-                }
-            }
-        }
-    .fourthRight{
-        width: 40%;
-        align-self: center;
-        img{
-            width: 100%;
-        }
-    }
-    .fourthLeft{
-        width: 50%;
-        text-align: right;
-    }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-end;
-    }
-    @include mqTinyTablet{
-        flex-direction: column-reverse;
-        
-        .fourthRight{
-            width: 100%;
-        }
-        .fourthLeft{
-            width: 100%;
-            text-align: center;
-        }
-        .skillsUsed, .projectButtons{
-        justify-content: center;
-    }
-    }
-}
-
-.fifthProject{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    .fifthLeft{
-        align-self: center;
-        width: 40%;
-        img{
-            width: 100%;
-        }
-    }
-    .fifthRight{
-        width: 50%;
-        text-align: left;
-    }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-start;
-    }
-    @include mqTinyTablet{
-        flex-direction: column;
-        .fifthLeft{
-            width: 100%;
-        }
-        .fifthRight{
-            width: 100%;
-            text-align: center;
-        }
-        .skillsUsed, .projectButtons{
-        justify-content: center;
-    }
-    }
-}
-
-.sixthProject{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-        p{
-            a{
-                color: $orangeColor;
-                transition: 0.3s;
-                &:hover{
-                    color: $teal;
-                }
-            }
-        }
-    .sixthRight{
-        width: 40%;
-        align-self: center;
-        img{
-            width: 100%;
-        }
-    }
-    .sixthLeft{
-        width: 50%;
-        text-align: right;
-    }
-    .skillsUsed, .projectButtons{
-        justify-content: flex-end;
-    }
-    @include mqTinyTablet{
-        flex-direction: column-reverse;
-        
-        .sixthRight{
-            width: 100%;
-        }
-        .sixthLeft{
-            width: 100%;
-            text-align: center;
-        }
-        .skillsUsed, .projectButtons{
-        justify-content: center;
-    }
-    }
 }

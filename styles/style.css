@@ -752,7 +752,8 @@ header .headerContent {
   margin: 0 5px;
 }
 
-.firstProject {
+.imageFirstProject {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,50 +762,50 @@ header .headerContent {
           justify-content: space-between;
 }
 
-.firstProject .firstLeft {
+.imageFirstProject .imageLeft {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   width: 40%;
 }
 
-.firstProject .firstLeft img {
+.imageFirstProject .imageLeft img {
   width: 100%;
 }
 
-.firstProject .firstRight {
+.imageFirstProject .textRight {
   width: 50%;
   text-align: left;
 }
 
-.firstProject .skillsUsed, .firstProject .projectButtons {
+.imageFirstProject .skillsUsed, .imageFirstProject .projectButtons {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
 @media (max-width: 740px) {
-  .firstProject {
+  .imageFirstProject {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .firstProject .firstLeft {
+  .imageFirstProject .imageLeft {
     width: 100%;
   }
-  .firstProject .firstRight {
+  .imageFirstProject .textRight {
     width: 100%;
     text-align: center;
   }
-  .firstProject .skillsUsed, .firstProject .projectButtons {
+  .imageFirstProject .skillsUsed, .imageFirstProject .projectButtons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.secondProject {
+.textFirstProject {
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,285 +815,53 @@ header .headerContent {
           justify-content: space-between;
 }
 
-.secondProject .secondRight {
+.textFirstProject .imageRight {
   width: 40%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.secondProject .secondRight img {
+.textFirstProject .imageRight img {
   width: 100%;
 }
 
-.secondProject .secondLeft {
+.textFirstProject .textLeft {
   width: 50%;
   text-align: right;
 }
 
-.secondProject .secondLeft p a {
+.textFirstProject .textLeft p a {
   color: #FC6F5C;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.secondProject .secondLeft p a:hover {
+.textFirstProject .textLeft p a:hover {
   color: #00a79d;
 }
 
-.secondProject .skillsUsed, .secondProject .projectButtons {
+.textFirstProject .skillsUsed, .textFirstProject .projectButtons {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
 @media (max-width: 740px) {
-  .secondProject {
+  .textFirstProject {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .secondProject .secondRight {
+  .textFirstProject .imageRight {
     width: 100%;
   }
-  .secondProject .secondLeft {
-    width: 100%;
-    text-align: center;
-  }
-  .secondProject .skillsUsed, .secondProject .projectButtons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.thirdProject {
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.thirdProject .thirdLeft {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 40%;
-}
-
-.thirdProject .thirdLeft img {
-  width: 100%;
-}
-
-.thirdProject .thirdRight {
-  width: 50%;
-  text-align: left;
-}
-
-.thirdProject .skillsUsed, .thirdProject .projectButtons {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-@media (max-width: 740px) {
-  .thirdProject {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .thirdProject .thirdLeft {
-    width: 100%;
-  }
-  .thirdProject .thirdRight {
+  .textFirstProject .textLeft {
     width: 100%;
     text-align: center;
   }
-  .thirdProject .skillsUsed, .thirdProject .projectButtons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.fourthProject {
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.fourthProject p a {
-  color: #FC6F5C;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.fourthProject p a:hover {
-  color: #00a79d;
-}
-
-.fourthProject .fourthRight {
-  width: 40%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.fourthProject .fourthRight img {
-  width: 100%;
-}
-
-.fourthProject .fourthLeft {
-  width: 50%;
-  text-align: right;
-}
-
-.fourthProject .skillsUsed, .fourthProject .projectButtons {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-@media (max-width: 740px) {
-  .fourthProject {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .fourthProject .fourthRight {
-    width: 100%;
-  }
-  .fourthProject .fourthLeft {
-    width: 100%;
-    text-align: center;
-  }
-  .fourthProject .skillsUsed, .fourthProject .projectButtons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.fifthProject {
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.fifthProject .fifthLeft {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 40%;
-}
-
-.fifthProject .fifthLeft img {
-  width: 100%;
-}
-
-.fifthProject .fifthRight {
-  width: 50%;
-  text-align: left;
-}
-
-.fifthProject .skillsUsed, .fifthProject .projectButtons {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-@media (max-width: 740px) {
-  .fifthProject {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .fifthProject .fifthLeft {
-    width: 100%;
-  }
-  .fifthProject .fifthRight {
-    width: 100%;
-    text-align: center;
-  }
-  .fifthProject .skillsUsed, .fifthProject .projectButtons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.sixthProject {
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.sixthProject p a {
-  color: #FC6F5C;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.sixthProject p a:hover {
-  color: #00a79d;
-}
-
-.sixthProject .sixthRight {
-  width: 40%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.sixthProject .sixthRight img {
-  width: 100%;
-}
-
-.sixthProject .sixthLeft {
-  width: 50%;
-  text-align: right;
-}
-
-.sixthProject .skillsUsed, .sixthProject .projectButtons {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-@media (max-width: 740px) {
-  .sixthProject {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .sixthProject .sixthRight {
-    width: 100%;
-  }
-  .sixthProject .sixthLeft {
-    width: 100%;
-    text-align: center;
-  }
-  .sixthProject .skillsUsed, .sixthProject .projectButtons {
+  .textFirstProject .skillsUsed, .textFirstProject .projectButtons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1100,11 +869,9 @@ header .headerContent {
 }
 
 .contact {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.8))), url(../assets/treePattern.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url(../assets/treePattern.jpg);
+  background-image: url(../assets/whiteBackground.png);
   background-repeat: repeat;
   background-position: center center;
-  background-size: contain;
   text-align: center;
   padding-top: 80px;
 }
@@ -1222,12 +989,14 @@ header .headerContent {
           justify-content: space-between;
 }
 
-.contactForm .inputRow .emailInput, .contactForm .inputRow .nameInput {
+.contactForm .inputRow .emailInput,
+.contactForm .inputRow .nameInput {
   width: 49%;
 }
 
 @media (max-width: 565px) {
-  .contactForm .inputRow .emailInput, .contactForm .inputRow .nameInput {
+  .contactForm .inputRow .emailInput,
+  .contactForm .inputRow .nameInput {
     width: 100%;
   }
 }
@@ -1246,12 +1015,14 @@ header .headerContent {
   display: inline-block;
 }
 
-.contactForm form textarea, .contactForm form input {
+.contactForm form textarea,
+.contactForm form input {
   resize: none;
   border-radius: 10px;
 }
 
-.contactForm form textarea:focus, .contactForm form input:focus {
+.contactForm form textarea:focus,
+.contactForm form input:focus {
   border: 4px dotted #00a79d;
 }
 

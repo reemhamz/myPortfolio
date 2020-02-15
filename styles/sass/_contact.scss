@@ -1,119 +1,118 @@
-.contact{
-    background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.8)), url(../assets/treePattern.jpg);
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: contain;
-    text-align: center;
-    padding-top: 80px;
-        h4{
-            position: relative;
-            display: inline-block;
-            padding: 0 50px;
-            &::before{
-                position: absolute;
-                content: "—";
-                top: 0;
-                left: 0;
-                color: $orangeColor;
-            }
-            &::after{
-                position: absolute;
-                content: "—";
-                top: 0;
-                right: 0;
-                color: $orangeColor;
-            }
-            span{
-                color: $lightOrange;
-            }
-    }
-    
-    .wrapper{
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        @include mqSmallTablet{
-        }
-    }
-}
-
-.socials{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.contact {
+  background-image: url(../assets/whiteBackground.png);
+  background-repeat: repeat;
+  background-position: center center;
+  text-align: center;
+  padding-top: 80px;
+  h4 {
     position: relative;
-    width: 60%;
-    margin: 0 auto;
-    @include mqMedPhone{
-                width: 100%;
-            }
-
-
-    h5{
-        color: $pinkColor
+    display: inline-block;
+    padding: 0 50px;
+    &::before {
+      position: absolute;
+      content: "—";
+      top: 0;
+      left: 0;
+      color: $orangeColor;
     }
-    .socialIcons{
-        margin-top: 20px;
-            display: flex;
-            justify-content: space-evenly;
-        
-        li{
-            i{
-                color: $orangeColor;
-                transition: 0.5s;
-                &:hover{
-                    color: $lightOrange;
-                }
-            }
-        }
+    &::after {
+      position: absolute;
+      content: "—";
+      top: 0;
+      right: 0;
+      color: $orangeColor;
     }
+    span {
+      color: $lightOrange;
+    }
+  }
+
+  .wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include mqSmallTablet {
+    }
+  }
 }
 
-.contactForm{
-            margin: 30px auto;
-            width: 80%;
-            background-color: $darkTeal;
-            border-radius: 10px;
-            border: 3px solid $orangeColor;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .inputRow{
-                display: flex;
-                justify-content: space-between;
-                
-                        .emailInput, .nameInput{
-                            width:49%;
-                            @include mqMedPhone{
-                                width: 100%;
-                            }
-                        }
-                        @include mqMedPhone{
-                            flex-direction: column;
-                        }
-            }
-            form{
-                padding: 25px;
-                display: inline-block;
-                textarea, input{
-                    resize: none;
-                    border-radius: 10px;
-                    &:focus{
-                        border: 4px dotted $teal;
-                    }
-                }
-            }
-            button{
-                
-                color: white;
-            }
-            @include mqSmallTablet{
-                justify-content: center;
-                width: 100%;
-                margin: 30px 0;
-                form{
-                    padding: 10px;
-                }
-            }
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  @include mqMedPhone {
+    width: 100%;
+  }
+
+  h5 {
+    color: $pinkColor;
+  }
+  .socialIcons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      i {
+        color: $orangeColor;
+        transition: 0.5s;
+        &:hover {
+          color: $lightOrange;
         }
+      }
+    }
+  }
+}
+
+.contactForm {
+  margin: 30px auto;
+  width: 80%;
+  background-color: $darkTeal;
+  border-radius: 10px;
+  border: 3px solid $orangeColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .inputRow {
+    display: flex;
+    justify-content: space-between;
+
+    .emailInput,
+    .nameInput {
+      width: 49%;
+      @include mqMedPhone {
+        width: 100%;
+      }
+    }
+    @include mqMedPhone {
+      flex-direction: column;
+    }
+  }
+  form {
+    padding: 25px;
+    display: inline-block;
+    textarea,
+    input {
+      resize: none;
+      border-radius: 10px;
+      &:focus {
+        border: 4px dotted $teal;
+      }
+    }
+  }
+  button {
+    color: white;
+  }
+  @include mqSmallTablet {
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+    form {
+      padding: 10px;
+    }
+  }
+}
