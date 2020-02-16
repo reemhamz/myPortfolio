@@ -762,6 +762,10 @@ header .headerContent {
           justify-content: space-between;
 }
 
+.imageFirstProject .pokePolaroid {
+  margin-top: 10px;
+}
+
 .imageFirstProject .imageLeft {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -778,7 +782,8 @@ header .headerContent {
   text-align: left;
 }
 
-.imageFirstProject .skillsUsed, .imageFirstProject .projectButtons {
+.imageFirstProject .skillsUsed,
+.imageFirstProject .projectButtons {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -798,7 +803,8 @@ header .headerContent {
     width: 100%;
     text-align: center;
   }
-  .imageFirstProject .skillsUsed, .imageFirstProject .projectButtons {
+  .imageFirstProject .skillsUsed,
+  .imageFirstProject .projectButtons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -841,7 +847,8 @@ header .headerContent {
   color: #00a79d;
 }
 
-.textFirstProject .skillsUsed, .textFirstProject .projectButtons {
+.textFirstProject .skillsUsed,
+.textFirstProject .projectButtons {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -861,7 +868,8 @@ header .headerContent {
     width: 100%;
     text-align: center;
   }
-  .textFirstProject .skillsUsed, .textFirstProject .projectButtons {
+  .textFirstProject .skillsUsed,
+  .textFirstProject .projectButtons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
